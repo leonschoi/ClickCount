@@ -1,12 +1,12 @@
 # ClickCounter and ClickTally
 
-ClickCounter uses Windows TCP/IP listener and button switches connected to ESP32 units to gather button click information via WiFi from all network linked switches.
+ClickCounter uses Windows TCP/IP listener and button switches connected to ESP32 units to gather button click information via WiFi from all network-linked ESP32 units.
 
-ClickTally processes the data saved by ClickCounter and publishes daily report on its local web server, which is updated once a minute during workhours.
+ClickTally processes the data saved by ClickCounter and publishes daily report on its local web server, updated once a minute during workhours.
 
 This manual follows the sequence of __Overview__ > __Windows Setup__ > __Software Installation__ > __Software User Guide__ for the components of ClickCounter and ClickTally.
 
-Once the software is installed and functioning, reading User Guide should be sufficient to use the software.
+Once the software is installed and functioning, User Guides will serve as a self-contained manual use the software.
 
 ---
 
