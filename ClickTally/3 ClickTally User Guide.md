@@ -1,5 +1,3 @@
-[Main](../README.md) > ClickTally > [3. ClickTally User Guide](3%20ClickTally%20User%20Guide.md)
-
 # 3. ClickTally User Guide
 
 ## 0. How to use ClickTally
