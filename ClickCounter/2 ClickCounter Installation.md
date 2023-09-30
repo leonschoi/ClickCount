@@ -1,8 +1,8 @@
 # 2. ClickCounter Installation
 
-## 1. App file copy
+## 1. Copy app files
 
-There is one directory in the setup file:
+There is one directory for ClickCounter in the setup file:
 
 - `\Program Files\YIC\ClickCounter\`
 
@@ -16,11 +16,11 @@ Copy `\Program Files\YIC\ClickCounter\*` to `C:\Program Files\YIC\ClickCounter\`
 
 It will popup a dialog box saying `need to provide administrator permission`.  Press `Continue` to copy.
 
-## 2. Data directory creation
+## 2. Directory creation and sharing
 
 Create a directory `C:\YIC\ClickCounter\`
 
-Enable directory sharing with appropriate Permissions (Full Control or Read/Write) for everyone or individual users as needed
+Enable sharing for the follwing directoy with appropriate Permissions (Full Control or Read/Write) for everyone or individual users as needed
 
 - `C:\YIC\` shared as `YIC`\
    To handle Data and Log files from other computers.
@@ -51,12 +51,3 @@ Enable directory sharing with appropriate Permissions (Full Control or Read/Writ
 - Go to `Services` app (type `Services` in the taskbar search box).
 - The services list contains `ClickCounter`.
 - Right click on `ClickCounter` to see `Start`, `Stop`, `Pause`, `Resume`, `Restart`.
-
-[![Left Arrow](https://github.githubassets.com/images/icons/emoji/unicode/2b05.png?v8)](1%20Windows%20Network%20Setup.md)\
-[Previous: 1. Windows Network Setup](1%20Windows%20Network%20Setup.md)
-
-[![Right Arrow](https://github.githubassets.com/images/icons/emoji/unicode/27a1.png?v8)](3%20ClickCounter%20User%20Guide.md)\
-[Next: 3. ClickCounter User Guide](3%20ClickCounter%20User%20Guide.md)
-
-[![Anchor](https://github.githubassets.com/images/icons/emoji/unicode/2693.png?v8)](../README.md)\
-[Main](../README.md)
