@@ -1,5 +1,3 @@
-[Main](../README.md) > ClickCounter > [5. ESP32_click_counter User Guide](5%20ESP32_click_counter%20User%20Guide.md)
-
 # 5. ESP32_click_counter User Guide
 
 In the directory `C:\YIC\ESP32_click_counter\`, double lick on `ESP32_click_counter.ino` to open Arduino IDE.
