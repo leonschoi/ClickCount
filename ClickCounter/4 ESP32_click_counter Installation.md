@@ -1,5 +1,3 @@
-[Main](../README.md) > ClickCounter > [4. ESP32_click_counter Installation](4%20ESP32_click_counter%20Installation.md)
-
 # 4. ESP32_click_counter Installation
 
 ## 1. Source file copy
