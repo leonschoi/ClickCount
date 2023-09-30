@@ -1,5 +1,3 @@
-[Main](../README.md) > ClickTally > [1. Windows Network Setup](1%20Windows%20Web%20Server%20Setup.md)
-
 # 1. Windows Web Server Setup
 
 Set Windows Network Profile to private: [Windows Network Setup](../ClickCounter/1%20Windows%20Network%20Setup.md)
