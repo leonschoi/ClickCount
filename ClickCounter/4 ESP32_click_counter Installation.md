@@ -1,6 +1,6 @@
 # 4. ESP32_click_counter Installation
 
-## 1. Source file copy
+## 1. Copy source files
 
 There is one directory for ESP32_click_counter in the setup file:
 
