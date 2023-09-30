@@ -1,5 +1,3 @@
-[Main](../README.md) > ClickCounter > [1. Windows Network Setup](1%20Windows%20Network%20Setup.md)
-
 # 1. Windows Network Setup
 
 ## 1. Local network
