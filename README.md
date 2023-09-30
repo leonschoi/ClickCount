@@ -14,7 +14,7 @@ Once the software is installed and functioning, reading User Guide should be suf
 
 0. [General Overview](ClickCounter/0%20General%20Overview.md)
 1. [Windows Network Setup](ClickCounter/1%20Windows%20Network%20Setup.md)
-2. [ClickCounter Installation](clickCounter/2%20ClickCounter%20Installation.md)
+2. [ClickCounter Installation](ClickCounter/2%20ClickCounter%20Installation.md)
 3. [ClickCounter User Guide](ClickCounter/3%20ClickCounter%20User%20Guide.md)
 4. [ESP32_click_counter Installation](ClickCounter/4%20ESP32_click_counter%20Installation.md)
 5. [ESP32_click_counter User Guide](ClickCounter/5%20ESP32_click_counter%20User%20Guide.md)
