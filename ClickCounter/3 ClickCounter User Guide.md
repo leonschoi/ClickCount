@@ -1,6 +1,6 @@
 # 3. ClickCounter User Guide
 
-Start ClickCount service by executing
+If the ClickCount service has been manually stopped, start again by executing
 
 ```BASH
 C:\> sc.exe start "ClickCounter"
@@ -8,7 +8,15 @@ C:\> sc.exe start "ClickCounter"
 
 in the Admin command-line window.
 
-ClickCounter listens to the port __8201__ to receive the click data transmitted from ESP32, and appends it to the file:
+Because it was created with the option `start=delayed-auto`, it will start automatically when the computer boots up.
+
+It can be stopped with command
+
+```BASH
+C:\> sc.exe stop "ClickCounter"
+```
+
+ClickCounter listens to the port __8201__ to receive the click data transmitted from ESP32 units, and appends them to the file:
 
 `C:\YIC\ClickCounter\Data\clicks_YYYY-MM-DD-HH-MM.txt`
 
@@ -25,12 +33,3 @@ ClickCount service status can be checked with:
 - For more detailed error and info messages of ClickCount\
   `\\"ComputerName"\YIC\ClickCount\Log\log_YYYY-MM-DD.txt`\
   Updated in real time.
-
-[![Left Arrow](https://github.githubassets.com/images/icons/emoji/unicode/2b05.png?v8)](2%20ClickCounter%20Installation.md)\
-[Previous: 2. ClickCounter Installation](2%20ClickCounter%20Installation.md)
-
-[![Right Arrow](https://github.githubassets.com/images/icons/emoji/unicode/27a1.png?v8)](4%20ESP32_click_counter%20Installation.md)\
-[Next: 4. ESP32_click_counter Installation](4%20ESP32_click_counter%20Installation.md)
-
-[![Anchor](https://github.githubassets.com/images/icons/emoji/unicode/2693.png?v8)](../README.md)\
-[Main](../README.md)
