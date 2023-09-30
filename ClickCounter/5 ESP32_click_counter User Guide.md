@@ -1,6 +1,6 @@
 # 5. ESP32_click_counter User Guide
 
-In the directory `C:\YIC\ESP32_click_counter\`, double lick on `ESP32_click_counter.ino` to open Arduino IDE.
+## 5.1. C++ variables setting
 
 ESP32 is used for two tasks
 
@@ -9,7 +9,7 @@ ESP32 is used for two tasks
 
 The C++ program variables used by these two tasks are in two files: `config.cpp` and `config.h`.
 
-## Switch button press
+### Switch button press
 
 For switch button press detection, we need to specify the pin connected to the switch.  It is in `config.h`
 
@@ -20,7 +20,7 @@ For switch button press detection, we need to specify the pin connected to the s
 const uint8_t pinNumberButton = 27; // pin ID the switch is connected to
 ```
 
-## Signal transmission
+### Signal transmission
 
 To transmit signal to ClickCounter computer, we need WiFi loginID/password and the host computer name/port.
 
@@ -65,7 +65,7 @@ Note how `MAX_LOGIN_INFO_SIZE` is used above.  It has to match the list entry co
 
 ESP_click_counter will run through the items of the `loginInfoStore` list, trying to connect for 20 seconds each.
 
-## User specified variables review
+### User specified variables review
 
 In sum, the variables that ___need to be specified by the user___ for both button switch connection and signal transmission are
 
@@ -94,19 +94,26 @@ LoginInfo loginInfoStore[MAX_LOGIN_INFO_SIZE] {
 };
 ```
 
-## Run the program
+## 5.2. Run the program
 
-Connect ESP32 unit to the computer running Arduino IDE.
+### Arduino IDE settings review
 
-On the menu, select:\
-Tools > Board > esp32 > ESP32 Dev Module\
-Tools > Port > COM?
+In the directory `C:\YIC\ESP32_click_counter\`, double lick on `ESP32_click_counter.ino` to open Arduino IDE.
 
-COM? will have a number that the computer has selected.
+The following items must be set before running the program. They tend to be unselected when environment changes, hence need to be checked often.
 
-To open the program output window\
-On the menu, select:\
-Tools > Serial Monitor (Ctrl-Shift-M)
+- Board selection\
+  Tools > Board > esp32 > ESP32 Dev Module
+- COM port selection\
+  Tools > Port > COM?
+- Serial Monitor window\
+  Tools > Serial Monitor (Ctrl-Shift-M)
+  - COM baud rate\
+    115200 baud
+  - Toggle Timestamp\
+    Click the clock icon to grey mode
+
+### Compilation
 
 Compile the program by one of two ways:
 
@@ -114,15 +121,35 @@ Compile the program by one of two ways:
    Sketch > Verify/Compile (Ctrl-R)
 2. On the top toolbar, click on the first button showing down arrow.
 
+Compilation messages are shown on the `Output` window.
+
+If a board is not selected, will result in an error:
+
+```CMD
+Compilation error:
+Missing FQBN (Fully Qualified Board Name)
+```
+
+### Upload and execute
+
 If it compiles, upload the program by one of two ways:
 
 1. On the menu:\
    Sketch > Upload (Ctrl-U)
 2. On the top toolbar, click on the second button showing right arrow.
 
+Upload messages are shown on the `Output` window.
+
+If ESP32 is not connected, will result in an error:
+
+```CMD
+A fatal error occurred: Could not open COM3, the port doesn't exist
+Failed uploading: uploading error: exit status 2
+```
+
 After uploading, the Serial Monitor window will show an output similar to the follwing:
 
-```BASH
+```CMD
 01:35:30.331 -> Connecting to WiFi1 network... 0 second(s)
 01:35:30.331 -> Connecting to WiFi1 network... 1 second(s)
 01:35:30.331 -> Connecting to WiFi1 network... 2 second(s)
@@ -135,7 +162,7 @@ After uploading, the Serial Monitor window will show an output similar to the fo
 
 On each click of the button, the Serial Monitor window will show the click data in the following format
 
-```BASH
+```CMD
 01:19:29.777 -> firstTriggerTime 12341292
 01:19:29.777 -> lastTriggerTime  12341437
 01:19:29.777 -> Data 246863502882720_c1_f12341292_r12341437
@@ -143,12 +170,6 @@ On each click of the button, the Serial Monitor window will show the click data 
 
 If the connection to WiFi or host machine fails, it will print the error essage
 
-```BASH
+```CMD
 01:19:29.784 -> TCP connection failed hostname1 8201
 ```
-
-[![Left Arrow](https://github.githubassets.com/images/icons/emoji/unicode/2b05.png?v8)](4%20ESP32_click_counter%20Installation.md)\
-[Previous: 4. ESP32_click_counter Installation](4%20ESP32_click_counter%20Installation.md)
-
-[![Anchor](https://github.githubassets.com/images/icons/emoji/unicode/2693.png?v8)](../README.md)\
-[Next: Main](../README.md)
