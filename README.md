@@ -1,2 +1,2 @@
-# ClickCount
+# ClickCounter
 ClickCount and ClickTally manual
