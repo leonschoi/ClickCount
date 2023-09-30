@@ -1,5 +1,3 @@
-[Main](../README.md) > ClickCounter > [3. ClickCount User Guide](3%20ClickCounter%20User%20Guide.md)
-
 # 3. ClickCounter User Guide
 
 Start ClickCount service by executing
