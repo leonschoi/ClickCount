@@ -1,5 +1,3 @@
-[Main](../README.md) > ClickTally > [2. ClickTally Installation](2%20ClickTally%20Installation.md)
-
 # 2. ClickTally Installation
 
 ## 1. App file copy
