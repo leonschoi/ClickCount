@@ -25,3 +25,4 @@ Once the software is installed and functioning, User Guides will serve as a self
 1. [Windows Web Server Setup](ClickTally/1%20Windows%20Web%20Server%20Setup.md)
 2. [ClickTally Installation](ClickTally/2%20ClickTally%20Installation.md)
 3. [ClickTally User Guide](ClickTally/3%20ClickTally%20User%20Guide.md)
+4. [ClickTally Process](ClickTally/4%20ClickTally%20Process.md)
