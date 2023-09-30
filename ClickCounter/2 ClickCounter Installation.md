@@ -1,5 +1,3 @@
-[Main](../README.md) > ClickCounter > [2. ClickCounter Installation](2%20ClickCounter%20Installation.md)
-
 # 2. ClickCounter Installation
 
 ## 1. App file copy
