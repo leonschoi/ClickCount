@@ -1,5 +1,3 @@
-[Main](../README.md) > ClickCounter > [0. General Overview](0%20General%20Overview.md)
-
 # 0. General Overview
 
 ClickCounter system consists of:
