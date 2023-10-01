@@ -1,8 +1,24 @@
 <table style="border-style: none" >
 <tr style="border-style: none">
-<td valign="top" width="50%" style="color: border-style: none">
+<td valign="top" width="50%" style="border-style: none">
 
 # 5. ESP32_click_counter User Guide
+
+</td>
+<td valign="top" width="50%" style="border-style: none">
+
+# 5. Hướng dẫn sử dụng ESP32_click_counter
+
+</td>
+</tr>
+
+<tr style="border-style: none">
+<td valign="top" width="50%" style="border-style: none"></td>
+<td valign="top" width="50%" style="border-style: none"></td>
+</tr>
+
+<tr style="border-style: none">
+<td valign="top" width="50%" style="border-style: none">
 
 ## 5.1. C++ variables setting
 
@@ -21,14 +37,12 @@ For switch button press detection, we need to specify the pin connected to the s
 //
 // ESO32 pin connection variable
 //
-// pin ID the switch is connected to
-const uint8_t pinNumberButton = 27; 
+const uint8_t pinNumberButton = 27; // pin ID the switch is connected to
 ```
 
 </td>
 <td valign="top" width="50%" style="border-style: none">
 
-# 5. Hướng dẫn sử dụng ESP32_click_counter
 
 ## 5.1. Đặt biến C++
 
@@ -47,8 +61,7 @@ Các biến chương trình C++ được hai tác vụ này sử dụng nằm tr
 //
 // ESO32 pin connection variable
 //
-// pin ID the switch is connected to
-const uint8_t pinNumberButton = 27; 
+const uint8_t pinNumberButton = 27; // pin ID the switch is connected to
 ```
 
 </td>
@@ -69,10 +82,8 @@ In `config.h`, two constants are defined.
 //
 // WiFi and host PC info variables
 //
-// port number used for ClickCount service on Windows
-const int PORT_NUMBER = 8201;
-// loginInfoStore array entry count
-const int MAX_LOGIN_INFO_SIZE = 3; 
+const int PORT_NUMBER = 8201;      // port number used for ClickCount service on Windows
+const int MAX_LOGIN_INFO_SIZE = 3; // loginInfoStore array entry count
 ```
 
 In `config.cpp`
@@ -89,7 +100,7 @@ HostInfo host2("hostname2", PORT_NUMBER);
 HostInfo host3("hostname3", PORT_NUMBER);
 
 //
-// WiFi login/pw and ClickCounter host 
+// WiFi login/pw and ClickCounter host to connect on the network
 //
 LoginInfo loginInfoStore[MAX_LOGIN_INFO_SIZE] {
   // ssid     password               host
@@ -119,15 +130,13 @@ Trong `config.h`, hai hằng số được xác định.
 //
 // WiFi and host PC info variables
 //
-// port number used for ClickCount service on Windows
-const int PORT_NUMBER = 8201;
-// loginInfoStore array entry count
-const int MAX_LOGIN_INFO_SIZE = 3; 
+const int PORT_NUMBER = 8201;      // port number used for ClickCount service on Windows
+const int MAX_LOGIN_INFO_SIZE = 3; // loginInfoStore array entry count
 ```
 
 Trong `config.cpp`
 
-- Kiểu `HostInfo` dùng để khai báo biến chứa tên máy tính chủ và số cổng.
+- Kiểu `HostInfo` dùng để khai báo biến chứa tên máy tính chủ và số port.
 - Mảng `LoginInfo` chứa danh sách ID/mật khẩu đăng nhập WiFi và máy chủ trong mạng.
 
 ```C++
@@ -139,7 +148,7 @@ HostInfo host2("hostname2", PORT_NUMBER);
 HostInfo host3("hostname3", PORT_NUMBER);
 
 //
-// WiFi login/pw and ClickCounter host
+// WiFi login/pw and ClickCounter host to connect on the network
 //
 LoginInfo loginInfoStore[MAX_LOGIN_INFO_SIZE] {
   // ssid     password               host
@@ -166,12 +175,10 @@ In `config.h`
 
 ```C++
 // ESO32 pin connection variable
-// pin ID the switch is connected to
-const uint8_t pinNumberButton = 27; 
+const uint8_t pinNumberButton = 27; // pin ID the switch is connected to
 
 // WiFi and host PC info variables
-// loginInfoStore array entry count
-const int MAX_LOGIN_INFO_SIZE = 1; 
+const int MAX_LOGIN_INFO_SIZE = 1; // loginInfoStore array entry count
 ```
 
 `PORT_NUMBER` need not change unless ClickCounter on Windows changes the port assignment.
@@ -182,7 +189,7 @@ In `config.cpp`
 // Host computer name and port number
 HostInfo host1("hostname1", PORT_NUMBER);
 
-// WiFi login/pw and ClickCounter host
+// WiFi login/pw and ClickCounter host to connect on the network
 LoginInfo loginInfoStore[MAX_LOGIN_INFO_SIZE] {
   // ssid     password               host
   {"WiFi1",   "enter password here", &host1},
@@ -200,15 +207,13 @@ Trong `config.h`
 
 ```C++
 // ESO32 pin connection variable
-// pin ID the switch is connected to
-const uint8_t pinNumberButton = 27; 
+const uint8_t pinNumberButton = 27; // pin ID the switch is connected to
 
 // WiFi and host PC info variables
-// loginInfoStore array entry count
-const int MAX_LOGIN_INFO_SIZE = 1; 
+const int MAX_LOGIN_INFO_SIZE = 1; // loginInfoStore array entry count
 ```
 
-Không cần thay đổi `PORT_NUMBER` trừ khi ClickCounter trên Windows thay đổi việc gán cổng.
+`PORT_NUMBER` không cần thay đổi trừ khi ClickCounter trên Windows thay đổi việc gán cổng.
 
 Trong `config.cpp`
 
@@ -216,7 +221,7 @@ Trong `config.cpp`
 // Host computer name and port number
 HostInfo host1("hostname1", PORT_NUMBER);
 
-// WiFi login/pw and ClickCounter host
+// WiFi login/pw and ClickCounter host to connect on the network
 LoginInfo loginInfoStore[MAX_LOGIN_INFO_SIZE] {
   // ssid     password               host
   {"WiFi1",   "enter password here", &host1},
@@ -262,7 +267,7 @@ Các mục sau phải được đặt trước khi chạy chương trình. Chún
   Tools > Board > esp32 > ESP32 Dev Module
 - Chọn cổng COM\
   Tools > Port > COM#
-- Cửa sổ Serial Monitor\
+- Serial Monitor window\
   Tools > Serial Monitor (Ctrl-Shift-M)
   - Tốc độ truyền COM\
     115200 baud
@@ -302,7 +307,7 @@ Biên dịch chương trình theo một trong hai cách:
    Sketch > Verify/Compile (Ctrl-R)
 2. Trên thanh công cụ trên cùng, nhấp vào nút đầu tiên hiển thị mũi tên xuống.
 
-Thông báo biên dịch được hiển thị trên cửa sổ `Output`.
+Thông báo biên dịch được hiển thị trên `Output` window.
 
 Nếu board không được chọn thì sẽ xảy ra lỗi:
 
@@ -371,7 +376,7 @@ Nếu nó biên dịch, hãy tải chương trình lên theo một trong hai cá
    Sketch > Upload (Ctrl-U)
 2. Trên thanh công cụ trên cùng, nhấp vào nút thứ hai hiển thị mũi tên phải.
 
-Thông báo tải lên được hiển thị trên cửa sổ `Output`.
+Thông báo tải lên được hiển thị trên `Output` window.
 
 Nếu ESP32 không được kết nối sẽ dẫn đến lỗi:
 
@@ -380,7 +385,7 @@ A fatal error occurred: Could not open COM3, the port doesn't exist
 Failed uploading: uploading error: exit status 2
 ```
 
-Sau khi upload lên, cửa sổ Serial Monitor sẽ hiển thị kết quả tương tự như sau:
+Sau khi upload lên, Serial Monitor window sẽ hiển thị kết quả tương tự như sau:
 
 ```CMD
 01:35:30.331 -> Connecting to WiFi1 network... 0 second(s)
@@ -393,7 +398,7 @@ Sau khi upload lên, cửa sổ Serial Monitor sẽ hiển thị kết quả tư
 01:35:30.331 -> TCP send task ESP32 core 0 Serial 246863502882720
 ```
 
-Mỗi lần nhấp vào nút, cửa sổ Serial Monitor sẽ hiển thị dữ liệu nhấp chuột theo định dạng sau
+Mỗi lần nhấp vào nút, Serial Monitor window sẽ hiển thị dữ liệu nhấp chuột theo định dạng sau
 
 ```CMD
 01:19:29.777 -> firstTriggerTime 12341292
