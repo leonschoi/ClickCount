@@ -49,7 +49,7 @@ The computer's Network Profile needs to be set to Private to be found by other c
 </td>
 <td valign="top" width="50%" style="border-style: none">
 
-#1. Thiết lập mạng Windows
+# 1. Thiết lập mạng Windows
 
 ## 1. Mạng cục bộ
 
