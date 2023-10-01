@@ -124,9 +124,9 @@ Cho phép chia sẻ các thư mục khác với Permissions (Full Control hoặc
 - Right click on `Windows PowerShell` (or `Command Prompt`), select `Run as administrator`.
 - Run
   ```BASH
-  C:\> sc.exe create "ClickTally"
-       binpath=
-         "C:\Program Files\YIC\ClickTally\ClickTally.exe"
+  C:\> sc.exe create "ClickTally" ^
+       binpath= ^
+         "C:\Program Files\YIC\ClickTally\ClickTally.exe" ^
        start=delayed-auto
   ```
   to create `ClickTally` service.
@@ -151,9 +151,9 @@ Cho phép chia sẻ các thư mục khác với Permissions (Full Control hoặc
 - Nhấp chuột phải vào `Windows PowerShell` (hoặc `Command Prompt`), chọn `Run as administrator`.
 - Chạy
   ```BASH
-  C:\> sc.exe create "ClickTally"
-       binpath=
-         "C:\Program Files\YIC\ClickTally\ClickTally.exe"
+  C:\> sc.exe create "ClickTally" ^
+       binpath= ^
+         "C:\Program Files\YIC\ClickTally\ClickTally.exe" ^
        start=delayed-auto
   ```
   để tạo dịch vụ `ClickTally`.
