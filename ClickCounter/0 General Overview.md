@@ -1,6 +1,6 @@
-<table>
+<table style="border: 0px">
 <tr>
-<td valign="top" width="50%" style="border: 0px">
+<td valign="top" width="50%">
 
 # 0. General Overview
 
