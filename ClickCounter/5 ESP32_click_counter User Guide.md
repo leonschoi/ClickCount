@@ -197,7 +197,7 @@ In `config.cpp`
 // Host computer name and port number
 HostInfo host1("hostname1", PORT_NUMBER);
 
-// WiFi login/pw and ClickCounter host to connect on the network
+// WiFi login/pw and ClickCounter host 
 LoginInfo loginInfoStore[MAX_LOGIN_INFO_SIZE] {
   // ssid     password               host
   {"WiFi1",   "enter password here", &host1},
@@ -231,7 +231,7 @@ Trong `config.cpp`
 // Host computer name and port number
 HostInfo host1("hostname1", PORT_NUMBER);
 
-// WiFi login/pw and ClickCounter host to connect on the network
+// WiFi login/pw and ClickCounter host 
 LoginInfo loginInfoStore[MAX_LOGIN_INFO_SIZE] {
   // ssid     password               host
   {"WiFi1",   "enter password here", &host1},
