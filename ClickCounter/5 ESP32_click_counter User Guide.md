@@ -351,14 +351,14 @@ Failed uploading: uploading error: exit status 2
 After uploading, the Serial Monitor window will show an output similar to the follwing:
 
 ```CMD
-01:35:30.331 -> Connecting to WiFi1 network... 0 second(s)
-01:35:30.331 -> Connecting to WiFi1 network... 1 second(s)
-01:35:30.331 -> Connecting to WiFi1 network... 2 second(s)
-01:35:30.331 -> Connecting to WiFi1 network... 3 second(s)
+01:35:30.331 -> Connecting to WiFi1 network... 
+01:35:30.331 -> Connecting to WiFi1 network... 
+01:35:30.331 -> Connecting to WiFi1 network... 
+01:35:30.331 -> Connecting to WiFi1 network... 
 01:35:30.331 -> WiFi connection successful.
 01:35:30.331 -> IP address: 10.216.77.137
-01:35:30.331 -> Interrupt capture task ESP32 core 1
-01:35:30.331 -> TCP send task ESP32 core 0 Serial 246...
+01:35:30.331 -> Interrupt capture task ESP32 
+01:35:30.331 -> TCP send task ESP32 
 ```
 
 On each click of the button, the Serial Monitor window will show the click data in the following format
@@ -366,13 +366,13 @@ On each click of the button, the Serial Monitor window will show the click data 
 ```CMD
 01:19:29.777 -> firstTriggerTime 12341292
 01:19:29.777 -> lastTriggerTime  12341437
-01:19:29.777 -> Data 246863502882720_c1_f12341292_r12341437
+01:19:29.777 -> Data 246863502882720_c1_...
 ```
 
 If the connection to WiFi or host machine fails, it will print the error essage
 
 ```CMD
-01:19:29.784 -> TCP connection failed hostname1 8201
+01:19:29.784 -> TCP connection failed...
 ```
 
 </td>
@@ -398,14 +398,14 @@ Failed uploading: uploading error: exit status 2
 Sau khi upload lên, Serial Monitor window sẽ hiển thị kết quả tương tự như sau:
 
 ```CMD
-01:35:30.331 -> Connecting to WiFi1 network... 0 second(s)
-01:35:30.331 -> Connecting to WiFi1 network... 1 second(s)
-01:35:30.331 -> Connecting to WiFi1 network... 2 second(s)
-01:35:30.331 -> Connecting to WiFi1 network... 3 second(s)
+01:35:30.331 -> Connecting to WiFi1 network... 
+01:35:30.331 -> Connecting to WiFi1 network... 
+01:35:30.331 -> Connecting to WiFi1 network... 
+01:35:30.331 -> Connecting to WiFi1 network... 
 01:35:30.331 -> WiFi connection successful.
 01:35:30.331 -> IP address: 10.216.77.137
-01:35:30.331 -> Interrupt capture task ESP32 core 1
-01:35:30.331 -> TCP send task ESP32 core 0 Serial 246...
+01:35:30.331 -> Interrupt capture task ESP32 
+01:35:30.331 -> TCP send task ESP32 
 ```
 
 Mỗi lần nhấp vào nút, Serial Monitor window sẽ hiển thị dữ liệu nhấp chuột theo định dạng sau
@@ -413,13 +413,13 @@ Mỗi lần nhấp vào nút, Serial Monitor window sẽ hiển thị dữ liệ
 ```CMD
 01:19:29.777 -> firstTriggerTime 12341292
 01:19:29.777 -> lastTriggerTime  12341437
-01:19:29.777 -> Data 246863502882720_c1_f12341292_r12341437
+01:19:29.777 -> Data 246863502882720_c1_...
 ```
 
 Nếu kết nối với WiFi hoặc máy chủ không thành công, nó sẽ in thông báo lỗi
 
 ```CMD
-01:19:29.784 -> TCP connection failed hostname1 8201
+01:19:29.784 -> TCP connection failed...
 ```
 
 </td>
