@@ -126,7 +126,8 @@ Cho phép chia sẻ các thư mục khác với Permissions (Full Control hoặc
   ```BASH
   C:\> sc.exe create "ClickTally"
        binpath=
-         "C:\Program Files\YIC\ClickTally\ClickTally.exe" start=delayed-auto
+         "C:\Program Files\YIC\ClickTally\ClickTally.exe"
+       start=delayed-auto
   ```
   to create `ClickTally` service.
    - `start=delayed-auto` makes `ClickTally` start automatically when the computer reboots.
@@ -150,10 +151,10 @@ Cho phép chia sẻ các thư mục khác với Permissions (Full Control hoặc
 - Nhấp chuột phải vào `Windows PowerShell` (hoặc `Command Prompt`), chọn `Run as administrator`.
 - Chạy
   ```BASH
-  C:\> sc.exe
-       create "ClickTally"
+  C:\> sc.exe create "ClickTally"
        binpath=
-         "C:\Program Files\YIC\ClickTally\ClickTally.exe" start=delayed-auto
+         "C:\Program Files\YIC\ClickTally\ClickTally.exe"
+       start=delayed-auto
   ```
   để tạo dịch vụ `ClickTally`.
   - `start=delayed-auto` làm cho `ClickTally` tự động khởi động khi máy tính khởi động lại.
