@@ -52,7 +52,7 @@ Các tập tin là
 - `appsetting.json`
 - `ClickTally.exe`
 - `ClickTally.pdb`
-- Nó sẽ hiện lên một hộp thoại có nội dung `need to provide administrator permission`. Nhấp vào `Continue` để sao chép.
+- Nó sẽ hiển thị dialog box với nội dung `need to provide administrator permission`. Nhấp vào `Continue` để sao chép.
 
 Sao chép `\YIC\Config\*` sang `C:\YIC\Config\`\
 Các tập tin là
@@ -120,21 +120,21 @@ Cho phép chia sẻ các thư mục khác với Permissions (Full Control hoặc
 
 ## 3. Install `ClickTally` as Windows Service (daemon)
 
-- Type `Windows PowerShell` (or `Command Prompt`) in the taskbar search box, matching apps will appear.
-- Right click on `Windows PowerShell` (or `Command Prompt`), select `Run as administrator`.
+- Type `cmd` (or `Command Prompt`) in the taskbar search box, matching apps will appear.
+- Right click on `Command Prompt`, select `Run as administrator`.
 - Run
   ```BASH
-  C:\> sc.exe create "ClickTally" ^
-       binpath= ^
-         "C:\Program Files\YIC\ClickTally\ClickTally.exe" ^
-       start=delayed-auto
+  > sc.exe create "ClickTally" ^
+    binpath= ^
+      "C:\Program Files\YIC\ClickTally\ClickTally.exe" ^
+    start=delayed-auto
   ```
   to create `ClickTally` service.
    - `start=delayed-auto` makes `ClickTally` start automatically when the computer reboots.
    - `delayed-` makes it start after the critical system services start first.
 - Run
   ```BASH
-  C:\> sc.exe start "ClickTally"
+  > sc.exe start "ClickTally"
   ```
   to start running the service
 - Other control commands are
@@ -147,26 +147,26 @@ Cho phép chia sẻ các thư mục khác với Permissions (Full Control hoặc
 
 ## 3. Cài đặt `ClickTally` làm Windows Service (daemon)
 
-- Gõ `Windows PowerShell` (hoặc `Command Prompt`) vào hộp tìm kiếm trên thanh tác vụ, các ứng dụng phù hợp sẽ xuất hiện.
-- Nhấp chuột phải vào `Windows PowerShell` (hoặc `Command Prompt`), chọn `Run as administrator`.
+- Gõ `cmd` (hoặc `Command Prompt`) vào ô tìm kiếm trên taskbar, các ứng dụng phù hợp sẽ hiện ra.
+- Nhấp chuột phải vào `Command Prompt`, chọn `Run as Administrator`.
 - Chạy
   ```BASH
-  C:\> sc.exe create "ClickTally" ^
-       binpath= ^
-         "C:\Program Files\YIC\ClickTally\ClickTally.exe" ^
-       start=delayed-auto
+  > sc.exe create "ClickTally" ^
+    binpath= ^
+      "C:\Program Files\YIC\ClickTally\ClickTally.exe" ^
+    start=delayed-auto
   ```
-  để tạo dịch vụ `ClickTally`.
+  để tạo `ClickTally` service.
   - `start=delayed-auto` làm cho `ClickTally` tự động khởi động khi máy tính khởi động lại.
-  - `delayed-` khiến nó khởi động sau khi các dịch vụ hệ thống quan trọng khởi động trước.
+  - `delayed-` khiến nó khởi động sau khi services hệ thống quan trọng khởi động trước.
 - Chạy
   ```BASH
-  C:\> sc.exe start "ClickTally"
+  > sc.exe start "ClickTally"
   ```
-       để bắt đầu chạy dịch vụ
+  để bắt đầu chạy service
 - Các lệnh điều khiển khác là
   - `sc.exe stop "ClickTally"` để dừng
-  - `sc.exe delete "ClickTally"` để xóa khỏi danh sách dịch vụ
+  - `sc.exe remove "ClickTally"` để xóa khỏi danh sách service
 - Chạy `ClickTally` tạo thư mục `C:\YIC\ClickTally\Data` và `C:\YIC\ClickTally\Log`
 
 </td>
@@ -184,7 +184,7 @@ Cho phép chia sẻ các thư mục khác với Permissions (Full Control hoặc
 <td valign="top" width="50%" style="border-style: none">
 
 ## 4. Điều khiển `ClickTally` bằng ứng dụng Services
-
+  
 - Vào ứng dụng `Services` (gõ `Services` vào ô tìm kiếm trên thanh taskbar).
 - Danh sách chứa `ClickTally`.
 - Nhấp chuột phải vào `ClickTally` để xem `Start`, `Stop`, `Pause`, `Resume`, `Restart`.
