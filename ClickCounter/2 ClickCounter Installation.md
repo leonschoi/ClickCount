@@ -1,5 +1,5 @@
 <table style="border-style: none">
-<tr style="border-style: none">
+<tr bgcolor="white" style="border-style: none">
 <td valign="top" width="50%" style="color: border-style: none">
 
 # 2. ClickCounter Installation
@@ -43,7 +43,7 @@ Nó sẽ bật lên một hộp thoại có nội dung `administrator permission
 
 </td>
 </tr>
-<tr style="border-style: none">
+<tr bgcolor="white" style="border-style: none">
 <td valign="top" width="50%" style="border-style: none">
    
 ## 2. Directory creation and sharing
@@ -69,7 +69,7 @@ Cho phép chia sẻ thư mục bổ sung với Quyền thích hợp (Toàn quy�
 
 </td>
 </tr>
-<tr style="border-style: none">
+<tr bgcolor="white" style="border-style: none">
 <td valign="top" width="50%" style="border-style: none">
 
 ## 3. Install `ClickCounter` as Windows Service (daemon)
@@ -125,7 +125,7 @@ Cho phép chia sẻ thư mục bổ sung với Quyền thích hợp (Toàn quy�
 
 </td>
 </tr>
-<tr style="border-style: none">
+<tr bgcolor="white" style="border-style: none">
 <td valign="top" width="50%" style="border-style: none">
 
 ## 4. Control `ClickCounter` using the Services app
