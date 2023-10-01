@@ -37,7 +37,8 @@ For switch button press detection, we need to specify the pin connected to the s
 //
 // ESO32 pin connection variable
 //
-const uint8_t pinNumberButton = 27; // pin ID the switch is connected to
+// pin ID the switch is connected to
+const uint8_t pinNumberButton = 27;
 ```
 
 </td>
@@ -61,7 +62,8 @@ Các biến chương trình C++ được hai tác vụ này sử dụng nằm tr
 //
 // ESO32 pin connection variable
 //
-const uint8_t pinNumberButton = 27; // pin ID the switch is connected to
+// pin ID the switch is connected to
+const uint8_t pinNumberButton = 27; 
 ```
 
 </td>
@@ -82,8 +84,10 @@ In `config.h`, two constants are defined.
 //
 // WiFi and host PC info variables
 //
-const int PORT_NUMBER = 8201;      // port number used for ClickCount service on Windows
-const int MAX_LOGIN_INFO_SIZE = 3; // loginInfoStore array entry count
+// port number used for ClickCount service on Windows
+const int PORT_NUMBER = 8201;
+// loginInfoStore array entry count
+const int MAX_LOGIN_INFO_SIZE = 3; 
 ```
 
 In `config.cpp`
@@ -130,8 +134,10 @@ Trong `config.h`, hai hằng số được xác định.
 //
 // WiFi and host PC info variables
 //
-const int PORT_NUMBER = 8201;      // port number used for ClickCount service on Windows
-const int MAX_LOGIN_INFO_SIZE = 3; // loginInfoStore array entry count
+// port number used for ClickCount service on Windows
+const int PORT_NUMBER = 8201;
+// loginInfoStore array entry count
+const int MAX_LOGIN_INFO_SIZE = 3; 
 ```
 
 Trong `config.cpp`
@@ -175,10 +181,12 @@ In `config.h`
 
 ```C++
 // ESO32 pin connection variable
-const uint8_t pinNumberButton = 27; // pin ID the switch is connected to
+// pin ID the switch is connected to
+const uint8_t pinNumberButton = 27; 
 
 // WiFi and host PC info variables
-const int MAX_LOGIN_INFO_SIZE = 1; // loginInfoStore array entry count
+// loginInfoStore array entry count
+const int MAX_LOGIN_INFO_SIZE = 1; 
 ```
 
 `PORT_NUMBER` need not change unless ClickCounter on Windows changes the port assignment.
@@ -207,10 +215,12 @@ Trong `config.h`
 
 ```C++
 // ESO32 pin connection variable
-const uint8_t pinNumberButton = 27; // pin ID the switch is connected to
+// pin ID the switch is connected to
+const uint8_t pinNumberButton = 27; 
 
 // WiFi and host PC info variables
-const int MAX_LOGIN_INFO_SIZE = 1; // loginInfoStore array entry count
+// loginInfoStore array entry count
+const int MAX_LOGIN_INFO_SIZE = 1; 
 ```
 
 `PORT_NUMBER` không cần thay đổi trừ khi ClickCounter trên Windows thay đổi việc gán cổng.
@@ -348,7 +358,7 @@ After uploading, the Serial Monitor window will show an output similar to the fo
 01:35:30.331 -> WiFi connection successful.
 01:35:30.331 -> IP address: 10.216.77.137
 01:35:30.331 -> Interrupt capture task ESP32 core 1
-01:35:30.331 -> TCP send task ESP32 core 0 Serial 246863502882720
+01:35:30.331 -> TCP send task ESP32 core 0 Serial 246...
 ```
 
 On each click of the button, the Serial Monitor window will show the click data in the following format
@@ -395,7 +405,7 @@ Sau khi upload lên, Serial Monitor window sẽ hiển thị kết quả tương
 01:35:30.331 -> WiFi connection successful.
 01:35:30.331 -> IP address: 10.216.77.137
 01:35:30.331 -> Interrupt capture task ESP32 core 1
-01:35:30.331 -> TCP send task ESP32 core 0 Serial 246863502882720
+01:35:30.331 -> TCP send task ESP32 core 0 Serial 246...
 ```
 
 Mỗi lần nhấp vào nút, Serial Monitor window sẽ hiển thị dữ liệu nhấp chuột theo định dạng sau
