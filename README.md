@@ -1,3 +1,7 @@
+<table style="border-style: none">
+<tr style="border-style: none">
+<td valign="top" width="50%" style="border-style: none">
+
 # ClickCounter and ClickTally
 
 ClickCounter uses Windows TCP/IP listener and button switches connected to ESP32 units to gather button click information via WiFi from all network-linked ESP32 units.
@@ -7,6 +11,23 @@ ClickTally processes the data saved by ClickCounter and publishes daily report o
 This manual follows the sequence of __Overview__ > __Windows Setup__ > __Software Installation__ > __Software User Guide__ for the components of ClickCounter and ClickTally.
 
 Once the software is installed and functioning, User Guides will serve as a self-contained manual use the software.
+
+</td>
+<td valign="top" width="50%" style="border-style: none">
+
+# ClickCounter và ClickTally
+
+ClickCounter sử dụng trình nghe Windows TCP/IP và các công tắc nút được kết nối với thiết bị ESP32 để thu thập thông tin về lần nhấp nút qua WiFi từ tất cả các thiết bị ESP32 được liên kết mạng.
+
+ClickTally xử lý dữ liệu được ClickCounter lưu và xuất bản báo cáo hàng ngày trên web server cục bộ của nó, được cập nhật mỗi phút một lần trong giờ làm việc.
+
+Sách hướng dẫn này tuân theo trình tự __Overview__ > __Windows Setup__ > __Software Installation__ > __Software User Guide__  cho các thành phần ClickCounter và ClickTally.
+
+Sau khi phần mềm được cài đặt và vận hành, UserGuides sẽ đóng vai trò là hướng dẫn sử dụng độc lập cho software.
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -25,4 +46,3 @@ Once the software is installed and functioning, User Guides will serve as a self
 1. [Windows Web Server Setup](ClickTally/1%20Windows%20Web%20Server%20Setup.md)
 2. [ClickTally Installation](ClickTally/2%20ClickTally%20Installation.md)
 3. [ClickTally User Guide](ClickTally/3%20ClickTally%20User%20Guide.md)
-
