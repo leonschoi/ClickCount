@@ -100,7 +100,7 @@ Cấu hình mạng máy tính của bạn cần được đặt ở chế độ 
 
 ## 3. Mở cổng tường lửa (8201) để nghe switch click truyền
 
-- Đi tới ứng dụng `Windows Defender Tường lửa với Bảo mật nâng cao` (gõ `defender` vào hộp tìm kiếm trên thanh tác vụ)
+- Đi tới ứng dụng `Windows Defender Firewall with Advanced Security` (gõ `defender` vào hộp tìm kiếm trên thanh tác vụ)
 - Ở khung bên trái chọn `Inbound Rules`
 - Ở khung bên phải, nhấp vào `New Rule...`
 - Cửa sổ `New Inbound Rule Wizard` sẽ mở ra.
