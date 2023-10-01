@@ -21,7 +21,8 @@ For switch button press detection, we need to specify the pin connected to the s
 //
 // ESO32 pin connection variable
 //
-const uint8_t pinNumberButton = 27; // pin ID the switch is connected to
+// pin ID the switch is connected to
+const uint8_t pinNumberButton = 27; 
 ```
 
 </td>
