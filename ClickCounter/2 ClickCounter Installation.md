@@ -91,20 +91,20 @@ Cho phép chia sẻ thư mục bổ sung với Quyền thích hợp (Toàn quy�
 - Gõ `Windows PowerShell` (hoặc `Command Prompt`) vào hộp tìm kiếm trên thanh tác vụ, các ứng dụng phù hợp sẽ xuất hiện.
 - Nhấp chuột phải vào `Windows PowerShell` (hoặc `Command Prompt`), chọn `Run as Administrator`.
 - Chạy
-       ```BASH
-       C:\> sc.exe tạo "ClickCounter" binpath="C:\Program Files\YIC\ClickCounter\ClickCounter.exe" start=delayed-auto
-       ```
-       để tạo dịch vụ `ClickCounter`.
-        - `start=delayed-auto` làm cho `ClickCounter` tự động khởi động khi máy tính khởi động lại.
-        - `delayed-` khiến nó khởi động sau khi các dịch vụ hệ thống quan trọng khởi động trước.
+  ```BASH
+  C:\> sc.exe tạo "ClickCounter" binpath="C:\Program Files\YIC\ClickCounter\ClickCounter.exe" start=delayed-auto
+  ```
+  để tạo dịch vụ `ClickCounter`.
+  - `start=delayed-auto` làm cho `ClickCounter` tự động khởi động khi máy tính khởi động lại.
+  - `delayed-` khiến nó khởi động sau khi các dịch vụ hệ thống quan trọng khởi động trước.
 - Chạy
-       ```BASH
-       C:\> sc.exe khởi động "ClickCounter"
-       ```
-       để bắt đầu chạy dịch vụ
+  ```BASH
+  C:\> sc.exe khởi động "ClickCounter"
+  ```
+  để bắt đầu chạy dịch vụ
 - Các lệnh điều khiển khác là
-       - `sc.exe stop "ClickCounter"` để dừng
-       - `sc.exe delete "ClickCounter"` để xóa nó khỏi danh sách dịch vụ
+  - `sc.exe stop "ClickCounter"` để dừng
+  - `sc.exe delete "ClickCounter"` để xóa nó khỏi danh sách dịch vụ
 - Chạy `ClickCounter` tạo thư mục `C:\YIC\ClickCounter\Data` và `C:\YIC\ClickCounter\Log`
 
 ## 4. Điều khiển `ClickCounter` bằng ứng dụng Services
