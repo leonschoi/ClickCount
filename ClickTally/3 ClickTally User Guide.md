@@ -19,6 +19,31 @@ It can be stopped by command
 C:\> sc.exe stop "ClickTally"
 ```
 
+</td>
+<td valign="top" width="50%" style="border-style: none">
+
+# 3. Hướng dẫn sử dụng ClickTally
+
+Nếu dịch vụ ClickTally đã bị dừng theo cách thủ công, hãy khởi động lại bằng cách thực thi
+
+```BASH
+C:\> sc.exe start "ClickTally"
+```
+trong cửa sổ dòng lệnh admin.
+
+Vì nó được tạo bằng tùy chọn `start=delayed-auto` nên nó sẽ tự động khởi động khi máy tính khởi động.
+
+Nó có thể được dừng lại bằng lệnh
+
+```BASH
+C:\> sc.exe stop "ClickTally"
+```
+
+</td>
+</tr>
+<tr style="border-style: none">
+<td valign="top" width="50%" style="border-style: none">
+
 ## 1. Daily usage of ClickTally
 
 ### 1.1. 7:00 am daily configuration loading
@@ -58,23 +83,6 @@ ESP32 unit ID to station ID mapping info is obtained from `GoogleSheets` automat
 
 </td>
 <td valign="top" width="50%" style="border-style: none">
-
-# 3. Hướng dẫn sử dụng ClickTally
-
-Nếu dịch vụ ClickTally đã bị dừng theo cách thủ công, hãy khởi động lại bằng cách thực thi
-
-```BASH
-C:\> sc.exe start "ClickTally"
-```
-trong cửa sổ dòng lệnh admin.
-
-Vì nó được tạo bằng tùy chọn `start=delayed-auto` nên nó sẽ tự động khởi động khi máy tính khởi động.
-
-Nó có thể được dừng lại bằng lệnh
-
-```BASH
-C:\> sc.exe stop "ClickTally"
-```
 
 ## 1. Phương pháp sử dụng ClickTally mỗi ngày
 
