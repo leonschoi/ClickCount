@@ -229,7 +229,7 @@ ClickTally thu thập dữ liệu do ClickCounter tạo và lưu dữ liệu đ�
 
 - Khi dịch vụ ClickTally khởi động, dữ liệu cấu hình hiếm khi thay đổi sẽ được đọc từ thư mục
 
-   `\"Tên máy tính"\YIC\Config\`
+   `\\"ComputerName"\YIC\Config\`
 
   Các tập tin được đọc là:
   - `GoogleSheetsID.json`
@@ -240,7 +240,7 @@ ClickTally thu thập dữ liệu do ClickCounter tạo và lưu dữ liệu đ�
   
   File template Excel sẽ được chuyển thành trang web báo cáo
 
-  - `\"ComputerName"\ClickTemplate\"ReportName".xlsx` hoặc `.xls`
+  - `\\"ComputerName"\ClickTemplate\"ReportName".xlsx` hoặc `.xls`
 
   Bảng chuyển đổi ID ESP32 sang ID trạm được đọc từ
 
