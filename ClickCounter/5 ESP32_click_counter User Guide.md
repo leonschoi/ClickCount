@@ -344,7 +344,8 @@ Upload messages are shown on the `Output` window.
 If the ESP32 is not connected, will result in an error:
 
 ```CMD
-A fatal error occurred: Could not open COM3, the port doesn't exist
+A fatal error occurred: Could not open COM3,
+                        the port doesn't exist
 Failed uploading: uploading error: exit status 2
 ```
 
@@ -391,7 +392,8 @@ Thông báo tải lên được hiển thị trên `Output` window.
 Nếu ESP32 không được kết nối sẽ dẫn đến lỗi:
 
 ```CMD
-A fatal error occurred: Could not open COM3, the port doesn't exist
+A fatal error occurred: Could not open COM3,
+                        the port doesn't exist
 Failed uploading: uploading error: exit status 2
 ```
 
