@@ -79,7 +79,8 @@ Cho phép chia sẻ thư mục bổ sung với Quyền thích hợp (Toàn quy�
 - Run
   ```BASH
   C:\> sc.exe create "ClickCounter" 
-       binpath="C:\Program Files\YIC\ClickCounter\ClickCounter.exe" 
+       binpath=
+         "C:\Program Files\YIC\ClickCounter\ClickCounter.exe" 
        start=delayed-auto
   ```
   to create `ClickCounter` service.
@@ -105,7 +106,8 @@ Cho phép chia sẻ thư mục bổ sung với Quyền thích hợp (Toàn quy�
 - Chạy
   ```BASH
   C:\> sc.exe create "ClickCounter" 
-       binpath="C:\Program Files\YIC\ClickCounter\ClickCounter.exe" 
+       binpath=
+         "C:\Program Files\YIC\ClickCounter\ClickCounter.exe" 
        start=delayed-auto
   ```
   để tạo dịch vụ `ClickCounter`.
@@ -113,7 +115,7 @@ Cho phép chia sẻ thư mục bổ sung với Quyền thích hợp (Toàn quy�
   - `delayed-` khiến nó khởi động sau khi các dịch vụ hệ thống quan trọng khởi động trước.
 - Chạy
   ```BASH
-  C:\> sc.exe khởi động "ClickCounter"
+  C:\> sc.exe start "ClickCounter"
   ```
   để bắt đầu chạy dịch vụ
 - Các lệnh điều khiển khác là
