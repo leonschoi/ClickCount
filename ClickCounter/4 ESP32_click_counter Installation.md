@@ -1,8 +1,24 @@
 <table style="border-style: none" >
 <tr style="border-style: none">
-<td valign="top" width="50%" style="color: border-style: none">
+<td valign="top" width="50%" style="border-style: none">
 
 # 4. ESP32_click_counter Installation
+
+</td>
+<td valign="top" width="50%" style="border-style: none">
+
+# 4. Cài đặt ESP32_click_counter
+
+</td>
+</tr>
+
+<tr style="border-style: none">
+<td valign="top" width="50%" style="border-style: none"></td>
+<td valign="top" width="50%" style="border-style: none"></td>
+</tr>
+
+<tr style="border-style: none">
+<td valign="top" width="50%" style="border-style: none">
 
 ## 1. Copy source files
 
@@ -27,7 +43,6 @@ Copy `\YIC\ESP32_click_counter\*` to `C:\YIC\ESP32_click_counter\`
 </td>
 <td valign="top" width="50%" style="border-style: none">
 
-# 4. Cài đặt ESP32_click_counter
 
 ## 1. Sao chép file nguồn
 
@@ -51,7 +66,7 @@ Sao chép `\YIC\ESP32_click_counter\*` sang `C:\YIC\ESP32_click_counter\`
 
 </td>
 </tr>
-<tr bgcolor=#FFFFFF00 style="border-style: none">
+<tr style="border-style: none">
 <td valign="top" width="50%" style="border-style: none">
 
 ## 2. Windows 11 driver update
@@ -146,7 +161,7 @@ Tools > Board > esp32 > ESP32 Dev Module
 </td>
 <td valign="top" width="50%" style="border-style: none">
 
-### 3.2. Lắp đặt bo mạch ESP32
+### 3.2. Cài đặt ESP32 board
 
 Mở Boards Manager theo một trong hai cách:
 
@@ -154,13 +169,11 @@ Mở Boards Manager theo một trong hai cách:
    Tools > Board > Boards Manager... (Ctrl-Shift-B)
 2. Trên thanh công cụ dọc bên trái của Arduino IDE, nhấn nút thứ hai trông giống như một card mở rộng bên trong máy tính
 
-Ngăn Boards Manager mở giữa thanh công cụ dọc bên trái và trình chỉnh sửa mã.
+Ngăn Boards Manager sẽ mở giữa thanh công cụ dọc bên trái và trình chỉnh sửa mã.
 
-Ở đầu Boards Manager, trong hộp văn bản "Lọc tìm kiếm của bạn...", nhập `esp32`. Hai hoặc nhiều mục sẽ xuất hiện.
+Ở đầu Boards Manager, trong hộp văn bản "Filter your search...", nhập `esp32`. Hai hoặc nhiều mục sẽ xuất hiện.
 
-Ở đầu Trình quản lý bảng, trong hộp văn bản "Filter your search...", nhập `esp32`. Hai hoặc nhiều mục sẽ xuất hiện.
-
-Cài đặt `Esp32 by Espressif Systems`
+Cài đặt `esp32 by Espressif Systems`
 
 Trên menu, chọn:\
 Tools > Board > esp32 > ESP32 Dev Module
@@ -189,7 +202,7 @@ Install `Vector by Peter Polidoro`
 
 ### 3.3. Cài đặt thư viện Vector
 
-Mở LibraryManager theo một trong hai cách:
+Mở Library Manager theo một trong hai cách:
 
 1. Trên menu:\
    Tools > Manage Libraries... (Ctrl-Shift-I)
@@ -241,7 +254,7 @@ Physically connect the ESP32 unit to the computer via USB-micro USB cable, then 
 
 Kết nối vật lý thiết bị ESP32 với máy tính thông qua cáp USB-micro USB, sau đó thiết lập như sau:
 
-- Chọn cổng COM\
+- Chọn COM port\
   Điều này sẽ chọn cổng giao tiếp tới ESP32.
 
   Trên menu, chọn:\
@@ -255,7 +268,7 @@ Kết nối vật lý thiết bị ESP32 với máy tính thông qua cáp USB-mi
   Trên menu, chọn:\
   Tools > Serial Monitor (Ctrl-Shift-M)
 
-  - Đặt tốc độ truyền COM\
+  - Đặt tốc độ COM baud\
     Tốc độ giao tiếp nối tiếp chính xác phải được chọn cho đầu ra Serial Monitor.
 
     Trên menu thả xuống ở bên phải cửa sổ Serial Monitor, chọn `115200 baud`.
@@ -264,7 +277,7 @@ Kết nối vật lý thiết bị ESP32 với máy tính thông qua cáp USB-mi
     Hiển thị thời gian nhận được tin nhắn từ ESP32.
 
     Trên cửa sổ phía dưới có các tab `Serial Monitor` và `Output`, với ba biểu tượng nút ở bên phải. Nhấn vào biểu tượng thứ 2 để chuyển hình ảnh đồng hồ sang màu xám.
-    
+
 </td>
 </tr>
 </table>
