@@ -84,8 +84,8 @@ Cho phép chia sẻ thư mục bổ sung với Permissions (Full Control hoặc 
   start=delayed-auto
   ```
   to create `ClickCounter` service.
-   - `start=delayed-auto` makes `ClickCounter` start automatically when the computer reboots.
-   - `delayed-` makes it start after critical system services start first.
+  - `start=delayed-auto` makes `ClickCounter` start automatically when the computer reboots.
+  - `delayed-` makes it start after critical system services start first.
 - Run
   ```BASH
   C:\> sc.exe start "ClickCounter"
@@ -111,8 +111,8 @@ Cho phép chia sẻ thư mục bổ sung với Permissions (Full Control hoặc 
   start=delayed-auto
   ```
   để tạo `ClickCounter` service.
-   - `start=delayed-auto` làm cho `ClickCounter` tự động khởi động khi máy tính khởi động lại.
-   - `delayed-` khiến nó khởi động sau khi services hệ thống quan trọng khởi động trước.
+  - `start=delayed-auto` làm cho `ClickCounter` tự động khởi động khi máy tính khởi động lại.
+  - `delayed-` khiến nó khởi động sau khi services hệ thống quan trọng khởi động trước.
 - Chạy
   ```BASH
   C:\> sc.exe start "ClickCounter"
