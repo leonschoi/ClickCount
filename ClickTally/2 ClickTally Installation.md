@@ -36,7 +36,7 @@ One file in the directory
 </td>
 <td valign="top" width="50%" style="border-style: none">
 
-#2. Cài đặt ClickTally
+# 2. Cài đặt ClickTally
 
 ## 1. Sao chép file ứng dụng
 
