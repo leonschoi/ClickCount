@@ -80,7 +80,7 @@ Cho phép chia sẻ thư mục bổ sung với Permissions (Full Control hoặc 
   ```BASH
   > sc.exe create "ClickCounter" ^
     binpath= ^
-      "C:\Program Files\YIC\ClickCounter\ClickCounter.exe" ^
+    "C:\Program Files\YIC\ClickCounter\ClickCounter.exe" ^
     start=delayed-auto
   ```
   to create `ClickCounter` service.
@@ -107,7 +107,7 @@ Cho phép chia sẻ thư mục bổ sung với Permissions (Full Control hoặc 
   ```BASH
   > sc.exe create "ClickCounter" ^
     binpath= ^
-      "C:\Program Files\YIC\ClickCounter\ClickCounter.exe" ^
+    "C:\Program Files\YIC\ClickCounter\ClickCounter.exe" ^
     start=delayed-auto
   ```
   để tạo `ClickCounter` service.
