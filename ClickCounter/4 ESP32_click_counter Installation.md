@@ -154,9 +154,9 @@ Mở Boards Manager theo một trong hai cách:
    Tools > Board > Boards Manager... (Ctrl-Shift-B)
 2. Trên thanh công cụ dọc bên trái của Arduino IDE, nhấn nút thứ hai trông giống như một card mở rộng bên trong máy tính
 
-Ngăn BoardsManager mở giữa thanh công cụ dọc bên trái và trình chỉnh sửa mã.
+Ngăn Boards Manager mở giữa thanh công cụ dọc bên trái và trình chỉnh sửa mã.
 
-Ở đầu BoardsManager, trong hộp văn bản "Lọc tìm kiếm của bạn...", nhập `esp32`. Hai hoặc nhiều mục sẽ xuất hiện.
+Ở đầu Boards Manager, trong hộp văn bản "Lọc tìm kiếm của bạn...", nhập `esp32`. Hai hoặc nhiều mục sẽ xuất hiện.
 
 Ở đầu Trình quản lý bảng, trong hộp văn bản "Filter your search...", nhập `esp32`. Hai hoặc nhiều mục sẽ xuất hiện.
 
