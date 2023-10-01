@@ -1,6 +1,6 @@
 <table>
 <tr>
-<td valign="top" width="50%">
+<td valign="top" width="50%" style="border: 0px">
 
 # 0. General Overview
 
@@ -20,7 +20,7 @@ And it is configured to start automatically when the computer turns on.  There i
 ESP32 installation requires a USB connection from Windows to ESP32 module via Arduino IDE and the modification of ESP32 code to specify the computer name, network ID/password.
 
 </td>
-<td valign="top" width="50%">
+<td valign="top" width="50%" style="border: 0px">
 
 # 0. Tổng quan chung
 
