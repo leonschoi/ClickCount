@@ -21,11 +21,9 @@
 <td valign="top" width="50%" style="border-style: none">
 
 If the ClickCount service has been manually stopped, start again by executing
-
 ```BASH
 C:\> sc.exe start "ClickCounter"
 ```
-
 in the Admin command-line window.
 
 Because it was created with the option `start=delayed-auto`, it will start automatically when the computer boots up.
@@ -58,12 +56,10 @@ ClickCount service status can be checked with:
 <td valign="top" width="50%" style="border-style: none">
 
 Nếu ClickCount service đã bị dừng thủ công, hãy khởi động lại nó bằng cách thực thi
-
 ```BASH
 C:\> sc.exe start "ClickCounter"
 ```
-
-trong cửa sổ dòng lệnh admin.
+trong admin command-line window.
 
 Vì nó được tạo bằng tùy chọn `start=delayed-auto` nên nó sẽ tự động khởi động khi máy tính khởi động.
 
