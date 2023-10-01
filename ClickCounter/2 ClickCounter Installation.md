@@ -61,7 +61,7 @@ Enable sharing for the follwing directoy with appropriate Permissions (Full Cont
 </td>
 <td valign="top" width="50%" style="border-style: none">
 
-#2. Cài đặt ClickCounter
+# 2. Cài đặt ClickCounter
 
 ## 1. Sao chép file ứng dụng
 
