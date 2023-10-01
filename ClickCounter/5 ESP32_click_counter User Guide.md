@@ -123,7 +123,7 @@ ESP_click_counter will run through the items of the `loginInfoStore` list, tryin
 
 ### Báo hiệu
 
-Để truyền tín hiệu đến máy tính ClickCounter, chúng tôi cần ID/mật khẩu đăng nhập WiFi và tên/cổng máy tính chủ.
+Để truyền tín hiệu đến máy tính ClickCounter, chúng ta cần ID/mật khẩu đăng nhập WiFi và tên máy tính chủ/port.
 
 Trong `config.h`, hai hằng số được xác định.
 
