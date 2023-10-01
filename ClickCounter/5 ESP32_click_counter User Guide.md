@@ -84,7 +84,7 @@ In `config.h`, two constants are defined.
 //
 // WiFi and host PC info variables
 //
-// port number used for ClickCount service on Windows
+// port number used for ClickCount service
 const int PORT_NUMBER = 8201;
 // loginInfoStore array entry count
 const int MAX_LOGIN_INFO_SIZE = 3; 
@@ -104,7 +104,7 @@ HostInfo host2("hostname2", PORT_NUMBER);
 HostInfo host3("hostname3", PORT_NUMBER);
 
 //
-// WiFi login/pw and ClickCounter host to connect on the network
+// WiFi login/pw and ClickCounter host 
 //
 LoginInfo loginInfoStore[MAX_LOGIN_INFO_SIZE] {
   // ssid     password               host
@@ -154,7 +154,7 @@ HostInfo host2("hostname2", PORT_NUMBER);
 HostInfo host3("hostname3", PORT_NUMBER);
 
 //
-// WiFi login/pw and ClickCounter host to connect on the network
+// WiFi login/pw and ClickCounter host
 //
 LoginInfo loginInfoStore[MAX_LOGIN_INFO_SIZE] {
   // ssid     password               host
