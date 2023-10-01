@@ -35,7 +35,9 @@ Enable sharing for the follwing directoy with appropriate Permissions (Full Cont
 - Right click on `Windows PowerShell` (or `Command Prompt`), select `Run as administrator`.
 - Run
   ```BASH
-  C:\> sc.exe create "ClickCounter" binpath="C:\Program Files\YIC\ClickCounter\ClickCounter.exe" start=delayed-auto
+  C:\> sc.exe create "ClickCounter" 
+              binpath="C:\Program Files\YIC\ClickCounter\ClickCounter.exe" 
+              start=delayed-auto
   ```
   to create `ClickCounter` service.
    - `start=delayed-auto` makes `ClickCounter` start automatically when the computer reboots.
@@ -92,7 +94,9 @@ Cho phép chia sẻ thư mục bổ sung với Quyền thích hợp (Toàn quy�
 - Nhấp chuột phải vào `Windows PowerShell` (hoặc `Command Prompt`), chọn `Run as Administrator`.
 - Chạy
   ```BASH
-  C:\> sc.exe tạo "ClickCounter" binpath="C:\Program Files\YIC\ClickCounter\ClickCounter.exe" start=delayed-auto
+  C:\> sc.exe create "ClickCounter" 
+              binpath="C:\Program Files\YIC\ClickCounter\ClickCounter.exe" 
+              start=delayed-auto
   ```
   để tạo dịch vụ `ClickCounter`.
   - `start=delayed-auto` làm cho `ClickCounter` tự động khởi động khi máy tính khởi động lại.
