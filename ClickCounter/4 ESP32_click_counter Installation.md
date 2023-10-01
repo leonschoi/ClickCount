@@ -85,9 +85,9 @@ For Windows 11, _not for windows 10_, a UART driver update is needed (as of Octo
 
 Đối với Windows 11, _không dành cho windows 10_, cần có bản cập nhật trình điều khiển UART (kể từ tháng 10 năm 2023) để thiết bị ESP32 giao tiếp với Windows 11.
 
-1. Tải xuống Trình điều khiển Windows phổ thông CP210x mới nhất\
+1. Tải xuống CP210x Universal Windows Driver\ mới nhất
 <https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads>
-2. Giải nén file driver vào một thư mục
+2. Unzip file driver vào một thư mục
 3. Trong thư mục, nhấp chuột phải vào tệp `silabser.inf` và chọn Cài đặt
 
 </td>
@@ -208,9 +208,9 @@ Mở Library Manager theo một trong hai cách:
    Tools > Manage Libraries... (Ctrl-Shift-I)
 2. Trên thanh công cụ dọc bên trái của Arduino IDE, nhấn nút thứ ba trông giống như những cuốn sách đứng
 
-Ngăn Library Manager mở giữa thanh công cụ dọc bên trái và trình chỉnh sửa mã.
+Ngăn Library Manager sẽ mở giữa toolbar dọc bên trái và trình chỉnh sửa mã.
 
-Ở đầu Library Manager, trong hộp văn bản "Filter your search...", nhập `vector`. Một số mục sẽ xuất hiện.
+Ở đầu Library Manager, trong textbox "Filter your search...", nhập `vector`. Một số mục sẽ xuất hiện.
 
 Cài đặt `Vector by Peter Polidoro`
 
@@ -262,7 +262,7 @@ Kết nối vật lý thiết bị ESP32 với máy tính thông qua cáp USB-mi
 
   Có thể có nhiều hơn một COM# để lựa chọn. Rút phích cắm thiết bị ESP32 để xem điều gì biến mất, sau đó cắm lại để tìm số COM được gán cho ESP32.
 
-- Cửa sổ Serial Monitor\
+- Serial Monitor window\
   In giá trị từ ESP32 thông qua kênh giao tiếp nối tiếp của cổng COM.
 
   Trên menu, chọn:\
@@ -271,12 +271,12 @@ Kết nối vật lý thiết bị ESP32 với máy tính thông qua cáp USB-mi
   - Đặt tốc độ COM baud\
     Tốc độ giao tiếp nối tiếp chính xác phải được chọn cho đầu ra Serial Monitor.
 
-    Trên menu thả xuống ở bên phải cửa sổ Serial Monitor, chọn `115200 baud`.
+    Trên menu dropdown ở bên phải Serial Monitor window, chọn `115200 baud`.
 
   - Toggle Timestamp\
     Hiển thị thời gian nhận được tin nhắn từ ESP32.
 
-    Trên cửa sổ phía dưới có các tab `Serial Monitor` và `Output`, với ba biểu tượng nút ở bên phải. Nhấn vào biểu tượng thứ 2 để chuyển hình ảnh đồng hồ sang màu xám.
+    Ở cuối window có các tab `Serial Monitor` và `Output`, với ba biểu tượng nút ở bên phải. Nhấn vào biểu tượng thứ 2 để chuyển hình ảnh đồng hồ sang màu xám.
 
 </td>
 </tr>
