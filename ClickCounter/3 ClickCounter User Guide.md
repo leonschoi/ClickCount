@@ -1,8 +1,18 @@
 <table style="border-style: none" >
 <tr style="border-style: none">
-<td valign="top" width="50%" style="color: border-style: none">
+<td valign="top" width="50%" style="border-style: none">
 
 # 3. ClickCounter User Guide
+
+</td>
+<td valign="top" width="50%" style="border-style: none">
+
+# 3. Hướng dẫn sử dụng ClickCounter
+
+</td>
+</tr>
+<tr bgcolor=#FFFFFF00 style="border-style: none">
+<td valign="top" width="50%" style="border-style: none">
 
 If the ClickCount service has been manually stopped, start again by executing
 
@@ -41,17 +51,18 @@ ClickCount service status can be checked with:
 </td>
 <td valign="top" width="50%" style="border-style: none">
 
-# 3. Hướng dẫn sử dụng ClickCounter
+Nếu ClickCount service đã bị dừng thủ công, hãy khởi động lại nó bằng cách thực thi
 
-Nếu dịch vụ ClickCount đã bị dừng theo cách thủ công, hãy khởi động lại bằng cách thực thi
 ```BASH
 C:\> sc.exe start "ClickCounter"
 ```
-trong cửa sổ dòng lệnh quản trị.
+
+trong cửa sổ dòng lệnh admin.
 
 Vì nó được tạo bằng tùy chọn `start=delayed-auto` nên nó sẽ tự động khởi động khi máy tính khởi động.
 
 Nó có thể được dừng lại bằng lệnh
+
 ```BASH
 C:\> sc.exe stop "ClickCounter"
 ```
@@ -60,19 +71,19 @@ ClickCounter lắng nghe cổng __8201__ để nhận dữ liệu nhấp chuột
 
 `C:\YIC\ClickCounter\Data\clicks_YYYY-MM-DD-HH-MM.txt`
 
-Đơn vị thời gian trong tên tệp là phút. Mỗi file sẽ chứa 1 phút dữ liệu để ClickTally có thể kiểm tra thư mục mỗi phút một lần và xóa file.
+Đơn vị thời gian trong tên tệp là phút. Mỗi file sẽ chứa 1 phút dữ liệu nên ClickTally có thể kiểm tra thư mục mỗi phút một lần và xóa file.
 
-Lưu ý rằng thư mục mạng cho `C:\YIC` đã được tạo trong quá trình cài đặt, vì vậy nó có thể được truy cập dưới dạng `\"ComputerName"\YIC\ClickCounter\Data\`.
+Lưu ý rằng thư mục mạng cho `C:\YIC` đã được tạo trong quá trình cài đặt, vì vậy nó có thể được truy cập dưới dạng `\\"ComputerName"\YIC\ClickCounter\Data\`.
 
 Trạng thái dịch vụ ClickCount có thể được kiểm tra bằng:
 
-- `http://"Computer name or IP"/log.html`\
-       Cập nhật trong thời gian thực. Trang web này chứa cả nhật ký ClickCount và ClickTally.
-- Tin nhắn nhật ký của ngày hôm trước được đặt tên\
-       `http://"Computer name or IP"/log_YYYY-MM-DD.html`
+- `http://"ComputerName or IP"/log.html`\
+  Cập nhật trong thời gian thực. Trang web này chứa cả nhật ký ClickCount và ClickTally.
+- Tin nhắn nhật ký từ những ngày trước được đặt tên\
+  `http://"ComputerName or IP"/log_YYYY-MM-DD.html`
 - Để biết thêm thông tin chi tiết về lỗi và thông báo ClickCount\
-       `\"Computer Name"\YIC\ClickCount\Log\log_YYYY-MM-DD.txt`\
-       Cập nhật trong thời gian thực.
+  `\\"ComputerName"\YIC\ClickCount\Log\log_YYYY-MM-DD.txt`\
+  Cập nhật trong thời gian thực.
 
 </td>
 </tr>
