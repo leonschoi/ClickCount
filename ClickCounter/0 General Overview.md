@@ -31,7 +31,7 @@ Hệ thống ClickCounter bao gồm:
 
 Việc xử lý thực tế dữ liệu được lưu trữ và tạo báo cáo được thực hiện bởi ClickTally, một service khác chạy trên Windows.
 
-Quá trình cài đặt Windows của ClickCounter là một thiết lập Windows đơn giản để kết nối TCP/IP và thực thi dòng lệnh tạo ra tệp service.
+Quá trình cài đặt Windows của ClickCounter là một thiết lập đơn giản của Windows để kết nối TCP/IP và thực thi dòng lệnh của việc tạo Windows service.
 
 Vì ClickCounter được viết dưới dạng service nên nó chạy âm thầm trong nền mà không có giao diện người dùng cho đến khi dừng thủ công.
 
