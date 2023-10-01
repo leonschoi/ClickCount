@@ -255,7 +255,7 @@ Kết nối vật lý thiết bị ESP32 với máy tính thông qua cáp USB-mi
   Trên menu, chọn:\
   Tools > Serial Monitor (Ctrl-Shift-M)
 
-  - Đặt tốc độ truyền COM
+  - Đặt tốc độ truyền COM\
     Tốc độ giao tiếp nối tiếp chính xác phải được chọn cho đầu ra Serial Monitor.
 
     Trên menu thả xuống ở bên phải cửa sổ Serial Monitor, chọn `115200 baud`.
