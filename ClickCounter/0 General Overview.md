@@ -1,6 +1,6 @@
-<div style="display: flex;">
-
-<div style="flex: 50%; padding: 10px; border: 01px">
+<table>
+<tr>
+<td valign="top" width="50%">
 
 # 0. General Overview
 
@@ -19,9 +19,8 @@ And it is configured to start automatically when the computer turns on.  There i
 
 ESP32 installation requires a USB connection from Windows to ESP32 module via Arduino IDE and the modification of ESP32 code to specify the computer name, network ID/password.
 
-</div>
-
-<div style="flex: 50%; padding: 10px; border: 0px">
+</td>
+<td valign="top" width="50%">
 
 # 0. Tổng quan chung
 
@@ -39,6 +38,7 @@ Vì ClickCounter được viết dưới dạng dịch vụ nên nó chạy âm 
 Và nó được cấu hình để tự động khởi động khi máy tính bật. Không cần phải chạy một quy trình riêng sau khi tắt máy tính.
 
 Việc cài đặt ESP32 yêu cầu kết nối USB từ Windows đến ESP32 thông qua Arduino IDE. Và việc sửa đổi mã ESP32 để chỉ định tên máy tính, ID/mật khẩu mạng.
-</div>
-</div>
 
+</td>
+</tr>
+</table>
