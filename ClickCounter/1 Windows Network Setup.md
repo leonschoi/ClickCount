@@ -53,7 +53,7 @@ The computer's network Profile needs to be set to private so it can be found by 
 
 ## 2. Đặt cấu hình mạng ở chế độ riêng tư
 
-Cấu hình mạng máy tính của bạn cần được đặt ở chế độ Riêng tư để các máy tính khác trên cùng mạng có thể tìm thấy nó.
+Network profile của máy tính cần được đặt ở chế độ riêng tư để các máy tính khác trên cùng mạng có thể tìm thấy nó.
 
 ### Trong Windows 11
 
