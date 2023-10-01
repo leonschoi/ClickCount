@@ -264,7 +264,7 @@ Các mục sau phải được đặt trước khi chạy chương trình. Chún
   Tools > Port > COM#
 - Cửa sổ Serial Monitor\
   Tools > Serial Monitor (Ctrl-Shift-M)
-  - Tốc độ truyền COM
+  - Tốc độ truyền COM\
     115200 baud
   - Toggle Timestamp\
     Bấm vào biểu tượng đồng hồ để chuyển sang chế độ màu xám
