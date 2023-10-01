@@ -39,7 +39,7 @@ và ba tập tin trong thư mục
 
 Sao chép `\Program Files\YIC\ClickCounter\*` sang `C:\Program Files\YIC\ClickCounter\`
 
-Nó sẽ bật lên một hộp thoại có nội dung `need to provide administrator permission`. Nhấp vào `Continue` để sao chép.
+Nó sẽ bật lên một dialog box nói rằng `need to provide administrator permission`. Nhấp vào `Continue` để sao chép.
 
 </td>
 </tr>
@@ -69,7 +69,7 @@ Cho phép chia sẻ thư mục bổ sung với Permissions (Full Control hoặc 
 
 </td>
 </tr>
-<tr bgcolor=#FFFFFF00 style="border-style: none">
+<tr style="border-style: none">
 <td valign="top" width="50%" style="border-style: none">
 
 ## 3. Install `ClickCounter` as Windows Service (daemon)
@@ -101,7 +101,7 @@ Cho phép chia sẻ thư mục bổ sung với Permissions (Full Control hoặc 
 
 ## 3. Cài đặt `ClickCounter` dưới dạng Windows Service (daemon)
 
-- Gõ `cmd` (hoặc `Command Prompt`) vào ô tìm kiếm trên thanh tác vụ, các ứng dụng phù hợp sẽ hiện ra.
+- Gõ `cmd` (hoặc `Command Prompt`) vào ô tìm kiếm taskbar, các ứng dụng phù hợp sẽ hiện ra.
 - Nhấp chuột phải vào `Command Prompt`, chọn `Run as Administrator`.
 - Chạy
   ```BASH
