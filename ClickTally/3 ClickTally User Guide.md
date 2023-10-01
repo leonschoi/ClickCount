@@ -236,7 +236,7 @@ ClickTally thu thập dữ liệu do ClickCounter tạo và lưu dữ liệu đ�
   - `TimeSlot.json`
   - `\DaysOfWeek.json`
 
-- Lúc 7 giờ sáng hoặc khi ClickTally_service_ bắt đầu:
+- Lúc 7 giờ sáng hoặc khi ClickTally service bắt đầu:
   
   File template Excel sẽ được chuyển thành trang web báo cáo
 
