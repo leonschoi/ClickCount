@@ -77,12 +77,12 @@ Cho phép chia sẻ thư mục bổ sung với Permissions (Full Control hoặc 
 - Type `cmd` (or `Command Prompt`) in the taskbar search box, matching apps will appear.
 - Right click on `Command Prompt`, select `Run as administrator`.
 - Run
-```BASH
+  ```BASH
 sc.exe create "ClickCounter" ^
 binpath= ^
 "C:\Program Files\YIC\ClickCounter\ClickCounter.exe" ^
 start=delayed-auto
-```
+  ```
   to create `ClickCounter` service.
    - `start=delayed-auto` makes `ClickCounter` start automatically when the computer reboots.
    - `delayed-` makes it start after critical system services start first.
@@ -104,12 +104,12 @@ start=delayed-auto
 - Gõ `cmd` (hoặc `Command Prompt`) vào ô tìm kiếm taskbar, các ứng dụng phù hợp sẽ hiện ra.
 - Nhấp chuột phải vào `Command Prompt`, chọn `Run as Administrator`.
 - Chạy
-```BASH
+  ```BASH
 sc.exe create "ClickCounter" ^
 binpath= ^
 "C:\Program Files\YIC\ClickCounter\ClickCounter.exe" ^
 start=delayed-auto
-```
+  ```
   để tạo `ClickCounter` service.
    - `start=delayed-auto` làm cho `ClickCounter` tự động khởi động khi máy tính khởi động lại.
    - `delayed-` khiến nó khởi động sau khi services hệ thống quan trọng khởi động trước.
