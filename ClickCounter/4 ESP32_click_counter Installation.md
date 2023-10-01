@@ -1,3 +1,7 @@
+<table style="border-style: none" >
+<tr style="border-style: none">
+<td valign="top" width="50%" style="color: border-style: none">
+
 # 4. ESP32_click_counter Installation
 
 ## 1. Copy source files
@@ -6,7 +10,7 @@ There is one directory for ESP32_click_counter in the setup file:
 
 - `\YIC\ESP32_click_counter\`
 
-and 7 files in the directory
+and 9 files in the directory
 
 - `ESP32_click_counter.h`
 - `ESP32_click_counter.ino`
@@ -20,24 +24,71 @@ and 7 files in the directory
 
 Copy `\YIC\ESP32_click_counter\*` to `C:\YIC\ESP32_click_counter\`
 
+</td>
+<td valign="top" width="50%" style="border-style: none">
+
+# 4. Cài đặt ESP32_click_counter
+
+## 1. Sao chép file nguồn
+
+Có một thư mục dành cho ESP32_click_counter trong tệp cài đặt:
+
+- `\YIC\ESP32_click_counter\`
+
+và 9 tập tin trong thư mục
+
+- `ESP32_click_counter.h`
+- `ESP32_click_counter.ino`
+- `interrupt.cpp`
+- `interrupt.h`
+- `config.cpp`
+- `config.h`
+- `WiFi_login_info.h`
+- `WiFi_TCP.cpp`
+- `WiFi_TCP.h`
+
+Sao chép `\YIC\ESP32_click_counter\*` sang `C:\YIC\ESP32_click_counter\`
+
+</td>
+</tr>
+<tr bgcolor=#FFFFFF00 style="border-style: none">
+<td valign="top" width="50%" style="border-style: none">
+
 ## 2. Windows 11 driver update
 
-For Windows 11, _not for windows 10_, a UART driver update is  needed (as of Octorber 2023) for the ESP32 unit to communicate with Windows 11.
+For Windows 11, _not for windows 10_, a UART driver update is needed (as of Octorber 2023) for the ESP32 unit to communicate with Windows 11.
 
 1. Download the latest CP210x Universal Windows Driver\
 <https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads>
 2. Unzip the driver file to a directory
-3. Inside the directory, right click on the `silabser.inf` file and select Install
+3. Inside the directory, right click the `silabser.inf` file and select Install
+
+</td>
+<td valign="top" width="50%" style="border-style: none">
+
+## 2. Cập nhật driver Windows 11
+
+Đối với Windows 11, _không dành cho windows 10_, cần có bản cập nhật trình điều khiển UART (kể từ tháng 10 năm 2023) để thiết bị ESP32 giao tiếp với Windows 11.
+
+1. Tải xuống Trình điều khiển Windows phổ thông CP210x mới nhất\
+<https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads>
+2. Giải nén file driver vào một thư mục
+3. Trong thư mục, nhấp chuột phải vào tệp `silabser.inf` và chọn Cài đặt
+
+</td>
+</tr>
+<tr bgcolor=#FFFFFF00 style="border-style: none">
+<td valign="top" width="50%" style="border-style: none">
 
 ## 3. Arduino IDE
 
-If Arduino IDE is not installed, download and install
+If Arduino IDE is not installed, download and install it
 
 - <https://www.arduino.cc/en/software>
 
-In the directory `C:\YIC\ESP32_click_counter\`, double lick on `ESP32_click_counter.ino` to open Arduino IDE.
+In the directory `C:\YIC\ESP32_click_counter\`, double click `ESP32_click_counter.ino` to open the Arduino IDE.
 
-Inside Arduino IDE, all files should be present as tabs.
+Inside the Arduino IDE, all files should be present as tabs.
 
 ### 3.1. General setup
 
@@ -46,63 +97,174 @@ File > Preference > Settings (Ctrl-Comma) > Settings tab
 
 - Sketchbook location:\
   `C:\YIC\ESP32_click_counter\`
-- Mark all checkboxes
+- Select all checkboxes
+
+</td>
+<td valign="top" width="50%" style="border-style: none">
+
+## 3. Arduino IDE
+
+Nếu Arduino IDE chưa được cài đặt, hãy tải xuống và cài đặt nó
+
+- <https://www.arduino.cc/en/software>
+
+Trong thư mục `C:\YIC\ESP32_click_counter\`, nhấp đúp vào `ESP32_click_counter.ino` để mở Arduino IDE.
+
+Bên trong Arduino IDE, tất cả các tệp sẽ hiển thị dưới dạng tab.
+
+### 3.1. Cài đặt chung
+
+Trên menu:\
+File > Preference > Settings (Ctrl-Comma) > Settings tab
+
+- Sketchbook location:\
+  `C:\YIC\ESP32_click_counter\`
+- Chọn tất cả các hộp kiểm
+
+</td>
+</tr>
+<tr bgcolor=#FFFFFF00 style="border-style: none">
+<td valign="top" width="50%" style="border-style: none">
 
 ### 3.2. Install ESP32 board
 
-Open the Boards Manager by one of the two ways:
+Open Boards Manager in one of two ways:
 
 1. On the menu:\
    Tools > Board > Boards Manager... (Ctrl-Shift-B)
-2. On the left vertical toolbar of Arduino IDE, press the second button that looks like computer internal expansion card
+2. On the left vertical toolbar of the Arduino IDE, press the second button that looks like an expansion card inside the computer
 
-Boards Manager pane will open between the left vertical toolbar and the code editor.
+The Boards Manager pane will open between the left vertical toolbar and the code editor.
 
-On top of the Boards Manager, in the textbox "Filter your search...", type in `esp32`. Two or more items will appear.
+At the top of Boards Manager, in the textbox "Filter your search...", type `esp32`. Two or more items will appear.
 
 Install `esp32 by Espressif Systems`
 
 On the menu, select:\
 Tools > Board > esp32 > ESP32 Dev Module
 
+</td>
+<td valign="top" width="50%" style="border-style: none">
+
+### 3.2. Lắp đặt bo mạch ESP32
+
+Mở Boards Manager theo một trong hai cách:
+
+1. Trên menu:\
+   Tools > Board > Boards Manager... (Ctrl-Shift-B)
+2. Trên thanh công cụ dọc bên trái của Arduino IDE, nhấn nút thứ hai trông giống như một card mở rộng bên trong máy tính
+
+Ngăn BoardsManager mở giữa thanh công cụ dọc bên trái và trình chỉnh sửa mã.
+
+Ở đầu BoardsManager, trong hộp văn bản "Lọc tìm kiếm của bạn...", nhập `esp32`. Hai hoặc nhiều mục sẽ xuất hiện.
+
+Ở đầu Trình quản lý bảng, trong hộp văn bản "Filter your search...", nhập `esp32`. Hai hoặc nhiều mục sẽ xuất hiện.
+
+Cài đặt `Esp32 by Espressif Systems`
+
+Trên menu, chọn:\
+Tools > Board > esp32 > ESP32 Dev Module
+
+</td>
+</tr>
+<tr bgcolor=#FFFFFF00 style="border-style: none">
+<td valign="top" width="50%" style="border-style: none">
+
 ### 3.3. Install Vector library
 
-Open the Library Manager by one of the two ways:
+Open Library Manager in one of two ways:
 
 1. On the menu:\
   Tools > Manage Libraries... (Ctrl-Shift-I)
-2. On the left vertical toolbar of Arduino IDE, press the third button that looks like standing books
+2. On the left vertical toolbar of the Arduino IDE, press the third button that looks like standing books
 
-Library Manager pane will open between the left vertical toolbar and the code editor.
+The Library Manager pane will open between the left vertical toolbar and the code editor.
 
-On top of the Library Manager, in the textbox "Filter your search...", type in `vector`. Several items will appear.
+At the top of Library Manager, in the textbox "Filter your search...", type `vector`. Several items will appear.
 
 Install `Vector by Peter Polidoro`
 
+</td>
+<td valign="top" width="50%" style="border-style: none">
+
+### 3.3. Cài đặt thư viện Vector
+
+Mở LibraryManager theo một trong hai cách:
+
+1. Trên menu:\
+   Tools > Manage Libraries... (Ctrl-Shift-I)
+2. Trên thanh công cụ dọc bên trái của Arduino IDE, nhấn nút thứ ba trông giống như những cuốn sách đứng
+
+Ngăn Library Manager mở giữa thanh công cụ dọc bên trái và trình chỉnh sửa mã.
+
+Ở đầu Library Manager, trong hộp văn bản "Filter your search...", nhập `vector`. Một số mục sẽ xuất hiện.
+
+Cài đặt `Vector by Peter Polidoro`
+
+</td>
+</tr>
+<tr bgcolor=#FFFFFF00 style="border-style: none">
+<td valign="top" width="50%" style="border-style: none">
+
 ### 3.4 Connect ESP32
 
-Physically connect an ESP32 unit to the computer via USB-micro USB cable, then set the following items:
+Physically connect the ESP32 unit to the computer via USB-micro USB cable, then set the following items:
 
-- COM port selection\
-  This select the communication port to ESP32.
+- Select COM port\
+  This selects the communication port to ESP32.
 
   On the menu, select:\
-  Tools > Port > COM?
+  Tools > Port > COM#
 
-  There might be more than one COM? to choose from. Unplug ESP32 to see which one disappears, then plug in again to find the COM number assigned to ESP32.
+  There might be more than one COM# to choose from. Unplug the ESP32 unit to see which one disappears, then plug it back to find the COM number assigned to the ESP32.
 
 - Serial Monitor window\
-  Outputs values from ESP32 via serial communication channel of COM port.
+  Prints values from the ESP32 unit via serial communication channel of the COM port.
 
   On the menu, select:\
   Tools > Serial Monitor (Ctrl-Shift-M)
 
-  - Set the COM baud rate\
-    Correct serial communication speed must be selected for Serial Monitor output.
+  - Set COM baud rate\
+    The correct serial communication speed must be selected for the Serial Monitor output.
 
-    On the dropdown menu on the right side of Serial Monitor window, select `115200 baud`.
+    On the dropdown menu to the right side of Serial Monitor window, select `115200 baud`.
 
   - Toggle Timestamp\
-    Displays the received time of the messages from ESP32.
+    Displays the time a message is received from the ESP32.
 
-    On the bottom window with `Serial Monitor` and `Output` tab, there are three button icons on the right side of the `Output` tab. Click on the second one with the clock image to grey mode.
+    On the bottom window with `Serial Monitor` and `Output` tabs, there are three button icons to the right side. Click on the second icon to turn the clock image to gray.
+
+</td>
+<td valign="top" width="50%" style="border-style: none">
+
+### 3.4 Kết nối ESP32
+
+Kết nối vật lý thiết bị ESP32 với máy tính thông qua cáp USB-micro USB, sau đó thiết lập như sau:
+
+- Chọn cổng COM\
+  Điều này sẽ chọn cổng giao tiếp tới ESP32.
+
+  Trên menu, chọn:\
+  Tools > Port > COM#
+
+  Có thể có nhiều hơn một COM# để lựa chọn. Rút phích cắm thiết bị ESP32 để xem điều gì biến mất, sau đó cắm lại để tìm số COM được gán cho ESP32.
+
+- Cửa sổ Serial Monitor\
+  In giá trị từ ESP32 thông qua kênh giao tiếp nối tiếp của cổng COM.
+
+  Trên menu, chọn:\
+  Tools > Serial Monitor (Ctrl-Shift-M)
+
+  - Đặt tốc độ truyền COM
+    Tốc độ giao tiếp nối tiếp chính xác phải được chọn cho đầu ra Serial Monitor.
+
+    Trên menu thả xuống ở bên phải cửa sổ Serial Monitor, chọn `115200 baud`.
+
+  - Toggle Timestamp\
+    Hiển thị thời gian nhận được tin nhắn từ ESP32.
+
+    Trên cửa sổ phía dưới có các tab `Serial Monitor` và `Output`, với ba biểu tượng nút ở bên phải. Nhấn vào biểu tượng thứ 2 để chuyển hình ảnh đồng hồ sang màu xám.
+    
+</td>
+</tr>
+</table>
