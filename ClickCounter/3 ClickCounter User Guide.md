@@ -1,3 +1,7 @@
+<table style="border-style: none" >
+<tr style="border-style: none">
+<td valign="top" width="50%" style="color: border-style: none">
+
 # 3. ClickCounter User Guide
 
 If the ClickCount service has been manually stopped, start again by executing
@@ -20,9 +24,9 @@ ClickCounter listens to the port __8201__ to receive the click data transmitted 
 
 `C:\YIC\ClickCounter\Data\clicks_YYYY-MM-DD-HH-MM.txt`
 
-The filename time unit is in minutes. Each file will contain the data of 1 minute, so that ClickTally can check the directory once a minute and delete the file.
+The time unit in the filename is in minutes. Each file will contain the data of 1 minute, so that ClickTally can check the directory once a minute and delete the file.
 
-Note that a network directory for `C:YIC` was created during the installation, hence it can be accessed as `\\"ComputerName"\YIC\ClickCounter\Data\`.
+Note that a network directory for `C:\YIC` was created during the installation, hence it can be accessed as `\\"ComputerName"\YIC\ClickCounter\Data\`.
 
 ClickCount service status can be checked with:
 
@@ -33,3 +37,43 @@ ClickCount service status can be checked with:
 - For more detailed error and info messages of ClickCount\
   `\\"ComputerName"\YIC\ClickCount\Log\log_YYYY-MM-DD.txt`\
   Updated in real time.
+
+</td>
+<td valign="top" width="50%" style="border-style: none">
+
+# 3. Hướng dẫn sử dụng ClickCounter
+
+Nếu dịch vụ ClickCount đã bị dừng theo cách thủ công, hãy khởi động lại bằng cách thực thi
+```BASH
+C:\> sc.exe start "ClickCounter"
+```
+trong cửa sổ dòng lệnh quản trị.
+
+Vì nó được tạo bằng tùy chọn `start=delayed-auto` nên nó sẽ tự động khởi động khi máy tính khởi động.
+
+Nó có thể được dừng lại bằng lệnh
+```BASH
+C:\> sc.exe stop "ClickCounter"
+```
+
+ClickCounter lắng nghe cổng __8201__ để nhận dữ liệu nhấp chuột được truyền từ thiết bị ESP32 và thêm chúng vào tệp:
+
+`C:\YIC\ClickCounter\Data\clicks_YYYY-MM-DD-HH-MM.txt`
+
+Đơn vị thời gian trong tên tệp là phút. Mỗi file sẽ chứa 1 phút dữ liệu để ClickTally có thể kiểm tra thư mục mỗi phút một lần và xóa file.
+
+Lưu ý rằng thư mục mạng cho `C:\YIC` đã được tạo trong quá trình cài đặt, vì vậy nó có thể được truy cập dưới dạng `\"ComputerName"\YIC\ClickCounter\Data\`.
+
+Trạng thái dịch vụ ClickCount có thể được kiểm tra bằng:
+
+- `http://"Computer name or IP"/log.html`\
+       Cập nhật trong thời gian thực. Trang web này chứa cả nhật ký ClickCount và ClickTally.
+- Tin nhắn nhật ký của ngày hôm trước được đặt tên\
+       `http://"Computer name or IP"/log_YYYY-MM-DD.html`
+- Để biết thêm thông tin chi tiết về lỗi và thông báo ClickCount\
+       `\"Computer Name"\YIC\ClickCount\Log\log_YYYY-MM-DD.txt`\
+       Cập nhật trong thời gian thực.
+
+</td>
+</tr>
+</table>
