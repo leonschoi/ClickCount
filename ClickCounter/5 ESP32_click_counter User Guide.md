@@ -46,7 +46,8 @@ Các biến chương trình C++ được hai tác vụ này sử dụng nằm tr
 //
 // ESO32 pin connection variable
 //
-const uint8_t pinNumberButton = 27; // pin ID the switch is connected to
+// pin ID the switch is connected to
+const uint8_t pinNumberButton = 27; 
 ```
 
 </td>
@@ -67,8 +68,10 @@ In `config.h`, two constants are defined.
 //
 // WiFi and host PC info variables
 //
-const int PORT_NUMBER = 8201;      // port number used for ClickCount service on Windows
-const int MAX_LOGIN_INFO_SIZE = 3; // loginInfoStore array entry count
+// port number used for ClickCount service on Windows
+const int PORT_NUMBER = 8201;
+// loginInfoStore array entry count
+const int MAX_LOGIN_INFO_SIZE = 3; 
 ```
 
 In `config.cpp`
@@ -115,8 +118,10 @@ Trong `config.h`, hai hằng số được xác định.
 //
 // WiFi and host PC info variables
 //
-const int PORT_NUMBER = 8201;      // port number used for ClickCount service on Windows
-const int MAX_LOGIN_INFO_SIZE = 3; // loginInfoStore array entry count
+// port number used for ClickCount service on Windows
+const int PORT_NUMBER = 8201;
+// loginInfoStore array entry count
+const int MAX_LOGIN_INFO_SIZE = 3; 
 ```
 
 Trong `config.cpp`
@@ -160,10 +165,12 @@ In `config.h`
 
 ```C++
 // ESO32 pin connection variable
-const uint8_t pinNumberButton = 27; // pin ID the switch is connected to
+// pin ID the switch is connected to
+const uint8_t pinNumberButton = 27; 
 
 // WiFi and host PC info variables
-const int MAX_LOGIN_INFO_SIZE = 1; // loginInfoStore array entry count
+// loginInfoStore array entry count
+const int MAX_LOGIN_INFO_SIZE = 1; 
 ```
 
 `PORT_NUMBER` need not change unless ClickCounter on Windows changes the port assignment.
@@ -192,10 +199,12 @@ Trong `config.h`
 
 ```C++
 // ESO32 pin connection variable
-const uint8_t pinNumberButton = 27; // pin ID the switch is connected to
+// pin ID the switch is connected to
+const uint8_t pinNumberButton = 27; 
 
 // WiFi and host PC info variables
-const int MAX_LOGIN_INFO_SIZE = 1; // loginInfoStore array entry count
+// loginInfoStore array entry count
+const int MAX_LOGIN_INFO_SIZE = 1; 
 ```
 
 Không cần thay đổi `PORT_NUMBER` trừ khi ClickCounter trên Windows thay đổi việc gán cổng.
