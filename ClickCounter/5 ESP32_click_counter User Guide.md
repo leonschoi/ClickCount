@@ -322,8 +322,8 @@ Thông báo biên dịch được hiển thị trên `Output` window.
 Nếu board không được chọn thì sẽ xảy ra lỗi:
 
 ```CMD
-Lỗi dịch thuật:
-Thiếu FQBN (Tên hội đồng đủ tiêu chuẩn)
+Compilation error:
+Missing FQBN (Fully Qualified Board Name)
 ```
 
 </td>
