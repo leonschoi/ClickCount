@@ -9,6 +9,21 @@ ClickCounter system consists of:
 1. ESP32 modules with attached switch buttons. It is connected to the local network via WiFi and sends TCP/IP messages on each click of the button.
 2. A Windows computer running a service (daemon) app. It receives TCP/IP messages from the ESP32 modules and saves them.
 
+</td>
+<td valign="top" width="50%" style="border-style: none">
+
+# 0. Tổng quan chung
+
+Hệ thống ClickCounter bao gồm:
+
+1. Mô-đun ESP32 có gắn công tắc. Nó được kết nối với mạng cục bộ qua WiFi và gửi tin nhắn TCP/IP mỗi lần nhấp vào nút.
+2. Máy tính Windows chạy các ứng dụng service (daemon). Nó nhận tin nhắn TCP/IP từ các mô-đun ESP32 và lưu trữ chúng.
+
+</td>
+</tr>
+<tr style="border-style: none">
+<td valign="top" width="50%" style="border-style: none">
+
 The actual processing of stored data and report generation is done by ClickTally, another service running on Windows.
 
 Windows installation of ClickCounter is a straightforward setup of Windows for TCP/IP connection and command-line execution of Windows service creation.
@@ -21,13 +36,6 @@ ESP32 installation requires a USB connection from Windows to ESP32 module via Ar
 
 </td>
 <td valign="top" width="50%" style="border-style: none">
-
-# 0. Tổng quan chung
-
-Hệ thống ClickCounter bao gồm:
-
-1. Mô-đun ESP32 có gắn công tắc. Nó được kết nối với mạng cục bộ qua WiFi và gửi tin nhắn TCP/IP mỗi lần nhấp vào nút.
-2. Máy tính Windows chạy các ứng dụng service (daemon). Nó nhận tin nhắn TCP/IP từ các mô-đun ESP32 và lưu trữ chúng.
 
 Việc xử lý thực tế dữ liệu được lưu trữ và tạo báo cáo được thực hiện bởi ClickTally, một service khác chạy trên Windows.
 
