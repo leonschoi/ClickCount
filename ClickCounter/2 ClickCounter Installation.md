@@ -102,7 +102,7 @@ Cho phép chia sẻ thư mục bổ sung với Permissions (Full Control hoặc 
 ## 3. Cài đặt `ClickCounter` dưới dạng Windows Service (daemon)
 
 - Gõ `cmd` (hoặc `Command Prompt`) vào ô tìm kiếm trên thanh tác vụ, các ứng dụng phù hợp sẽ hiện ra.
-- Nhấp chuột phải vào `Command Nhắc`, chọn `Run as Administrator`.
+- Nhấp chuột phải vào `Command Prompt`, chọn `Run as Administrator`.
 - Chạy
   ```BASH
   C:\> sc.exe create "ClickCounter" ^
