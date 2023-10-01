@@ -1,6 +1,6 @@
 <table style="border-style: none" >
-<tr bgcolor=#FFFFFF00 style="border-style: none">
-<td valign="top" width="50%" style="color: border-style: none">
+<tr style="border-style: none">
+<td valign="top" width="50%" style="border-style: none">
 
 # 2. ClickCounter Installation
 
@@ -39,21 +39,21 @@ và ba tập tin trong thư mục
 
 Sao chép `\Program Files\YIC\ClickCounter\*` sang `C:\Program Files\YIC\ClickCounter\`
 
-Nó sẽ bật lên một hộp thoại có nội dung `administrator permissions required`. Nhấp vào `Continue` để sao chép.
+Nó sẽ bật lên một hộp thoại có nội dung `need to provide administrator permission`. Nhấp vào `Continue` để sao chép.
 
 </td>
 </tr>
-<tr bgcolor=#FFFFFF00 style="border-style: none">
+<tr style="border-style: none">
 <td valign="top" width="50%" style="border-style: none">
-   
+
 ## 2. Directory creation and sharing
 
-Create a directory `C:\YIC\ClickCounter\`
+Create directory `C:\YIC\ClickCounter\`
 
 Enable sharing for the follwing directoy with appropriate Permissions (Full Control or Read/Write) for everyone or individual users as needed
 
 - `C:\YIC\` shared as `YIC`\
-   To handle Data and Log files from other computers.
+   To access Data and Log files.
 
 </td>
 <td valign="top" width="50%" style="border-style: none">
@@ -62,10 +62,10 @@ Enable sharing for the follwing directoy with appropriate Permissions (Full Cont
 
 Tạo thư mục `C:\YIC\ClickCounter\`
 
-Cho phép chia sẻ thư mục bổ sung với Quyền thích hợp (Toàn quyền kiểm soát hoặc Đọc/Ghi) cho mọi người hoặc người dùng cá nhân nếu cần
+Cho phép chia sẻ thư mục bổ sung với Permissions (Full Control hoặc Read/Write) thích hợp cho mọi người hoặc người dùng cá nhân nếu cần
 
 - `C:\YIC\` được chia sẻ dưới dạng `YIC`\
-        Để xử lý các tệp Dữ liệu và Nhật ký từ các máy tính khác.
+  Để truy cập các tệp Data và Log.
 
 </td>
 </tr>
@@ -74,18 +74,18 @@ Cho phép chia sẻ thư mục bổ sung với Quyền thích hợp (Toàn quy�
 
 ## 3. Install `ClickCounter` as Windows Service (daemon)
 
-- Type `Windows PowerShell` (or `Command Prompt`) in the taskbar search box, matching apps will appear.
-- Right click on `Windows PowerShell` (or `Command Prompt`), select `Run as administrator`.
+- Type `cmd` (or `Command Prompt`) in the taskbar search box, matching apps will appear.
+- Right click on `Command Prompt`, select `Run as administrator`.
 - Run
   ```BASH
-  C:\> sc.exe create "ClickCounter" 
-       binpath=
-         "C:\Program Files\YIC\ClickCounter\ClickCounter.exe" 
+  C:\> sc.exe create "ClickCounter" ^
+       binpath= ^
+         "C:\Program Files\YIC\ClickCounter\ClickCounter.exe" ^
        start=delayed-auto
   ```
   to create `ClickCounter` service.
    - `start=delayed-auto` makes `ClickCounter` start automatically when the computer reboots.
-   - `delayed-` makes it start after the critical system services start first.
+   - `delayed-` makes it start after critical system services start first.
 - Run
   ```BASH
   C:\> sc.exe start "ClickCounter"
@@ -99,29 +99,29 @@ Cho phép chia sẻ thư mục bổ sung với Quyền thích hợp (Toàn quy�
 </td>
 <td valign="top" width="50%" style="border-style: none">
 
-## 3. Cài đặt `ClickCounter` làm Dịch vụ Windows (daemon)
+## 3. Cài đặt `ClickCounter` dưới dạng Windows Service (daemon)
 
-- Gõ `Windows PowerShell` (hoặc `Command Prompt`) vào hộp tìm kiếm trên thanh tác vụ, các ứng dụng phù hợp sẽ xuất hiện.
-- Nhấp chuột phải vào `Windows PowerShell` (hoặc `Command Prompt`), chọn `Run as Administrator`.
+- Gõ `cmd` (hoặc `Command Prompt`) vào ô tìm kiếm trên thanh tác vụ, các ứng dụng phù hợp sẽ hiện ra.
+- Nhấp chuột phải vào `Command Nhắc`, chọn `Run as Administrator`.
 - Chạy
   ```BASH
-  C:\> sc.exe create "ClickCounter" 
-       binpath=
-         "C:\Program Files\YIC\ClickCounter\ClickCounter.exe" 
+  C:\> sc.exe create "ClickCounter" ^
+       binpath= ^
+         "C:\Program Files\YIC\ClickCounter\ClickCounter.exe" ^
        start=delayed-auto
   ```
-  để tạo dịch vụ `ClickCounter`.
-  - `start=delayed-auto` làm cho `ClickCounter` tự động khởi động khi máy tính khởi động lại.
-  - `delayed-` khiến nó khởi động sau khi các dịch vụ hệ thống quan trọng khởi động trước.
+  để tạo `ClickCounter` service.
+   - `start=delayed-auto` làm cho `ClickCounter` tự động khởi động khi máy tính khởi động lại.
+   - `delayed-` khiến nó khởi động sau khi services hệ thống quan trọng khởi động trước.
 - Chạy
   ```BASH
   C:\> sc.exe start "ClickCounter"
   ```
-  để bắt đầu chạy dịch vụ
+  để bắt đầu chạy service
 - Các lệnh điều khiển khác là
   - `sc.exe stop "ClickCounter"` để dừng
-  - `sc.exe delete "ClickCounter"` để xóa nó khỏi danh sách dịch vụ
-- Chạy `ClickCounter` tạo thư mục `C:\YIC\ClickCounter\Data` và `C:\YIC\ClickCounter\Log`
+  - `sc.exe delete "ClickCounter"` để xóa khỏi danh sách services
+- Chạy `ClickCounter` tạo các thư mục `C:\YIC\ClickCounter\Data` và `C:\YIC\ClickCounter\Log`
 
 </td>
 </tr>
@@ -131,7 +131,7 @@ Cho phép chia sẻ thư mục bổ sung với Quyền thích hợp (Toàn quy�
 ## 4. Control `ClickCounter` using the Services app
 
 - Go to the `Services` app (type `Services` in the taskbar search box).
-- Services list contains `ClickCounter`.
+- The Services list contains `ClickCounter`.
 - Right click on `ClickCounter` to see `Start`, `Stop`, `Pause`, `Resume`, `Restart`.
 
 </td>
@@ -140,7 +140,7 @@ Cho phép chia sẻ thư mục bổ sung với Quyền thích hợp (Toàn quy�
 ## 4. Điều khiển `ClickCounter` bằng ứng dụng Services
 
 - Vào ứng dụng `Services` (gõ `Services` vào ô tìm kiếm trên thanh taskbar).
-- Danh sách dịch vụ chứa `ClickCounter`.
+- Danh sách Services chứa `ClickCounter`.
 - Nhấp chuột phải vào `ClickCounter` để xem `Start`, `Stop`, `Pause`, `Resume`, `Restart`.
 
 </td>
