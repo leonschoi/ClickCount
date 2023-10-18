@@ -1,48 +1,59 @@
 <table style="border-style: none">
 <tr style="border-style: none">
+<td colspan=2 valign="top" style="border-style: none">
+
+# ClickCounter System
+
+</td>
+</tr>
+<tr style="border-style: none">
 <td valign="top" width="50%" style="border-style: none">
 
-# ClickCounter and ClickTally
+The ClickCounter System consists of:
 
-ClickCounter uses Windows TCP/IP listener and button switches connected to ESP32 units to gather button click information via WiFi from all network-linked ESP32 units.
+- ClickCounter Website
+- ESP32 Boards
+- ClickCounter Service
+- ClickTally Service
 
-ClickTally processes the data saved by ClickCounter and publishes daily report on its local web server, updated once a minute during workhours.
-
-This manual follows the sequence of __Overview__ > __Windows Setup__ > __Software Installation__ > __Software User Guide__ for the components of ClickCounter and ClickTally.
-
-Once the software is installed and functioning, User Guides will serve as a self-contained manual use the software.
+ESP32_boards send button press data over Wi-Fi to ClickCounter service for data collection. ClickTally service processes the data and stores it in a report file. ClickCounter website displays all reports and logs with last updated time to verify activity.
 
 </td>
 <td valign="top" width="50%" style="border-style: none">
 
-# ClickCounter và ClickTally
+ClickCounter System bao gồm:
 
-ClickCounter sử dụng trình nghe Windows TCP/IP và các công tắc nút được kết nối với thiết bị ESP32 để thu thập thông tin về lần nhấp nút qua WiFi từ tất cả các thiết bị ESP32 được liên kết mạng.
+- ClickCounter Website
+- ESP32 Boards
+- ClickCounter Service
+- ClickTally Service
 
-ClickTally xử lý dữ liệu được ClickCounter lưu và xuất bản báo cáo hàng ngày trên web server cục bộ của nó, được cập nhật mỗi phút một lần trong giờ làm việc.
+ESP32 boards gửi dữ liệu nhấn nút qua Wi-Fi tới ClickCounter service để thu thập dữ liệu. ClickTally service xử lý dữ liệu và lưu trữ dữ liệu đó trong tệp báo cáo. Trang web ClickCounter hiển thị tất cả các báo cáo và nhật ký với thời gian cập nhật lần cuối để xác minh hoạt động.
 
-Sách hướng dẫn này tuân theo trình tự __Overview__ > __Windows Setup__ > __Software Installation__ > __Software User Guide__  cho các thành phần ClickCounter và ClickTally.
+</td>
+</tr>
+<tr style="border-style: none">
+<td valign="top" width="50%" style="border-style: none">
 
-Sau khi phần mềm được cài đặt và vận hành, UserGuides sẽ đóng vai trò là hướng dẫn sử dụng độc lập cho software.
+For the quick general outline of the usage:
+
+- [Quick Start](Quick%20Start.md)
+
+For the quick system setup procedure:
+
+- [Quick Setup](Quick%20Setup.md)
+
+</td>
+<td valign="top" width="50%" style="border-style: none">
+
+Để có phác thảo chung nhanh về cách sử dụng:
+
+- [Quick Start](Quick%20Start.md)
+
+Để biết quy trình thiết lập hệ thống nhanh chóng:
+
+- [Quick Setup](Quick%20Setup.md)
 
 </td>
 </tr>
 </table>
-
----
-
-## ClickCounter
-
-0. [General Overview](ClickCounter/0%20General%20Overview.md)
-1. [Windows Network Setup](ClickCounter/1%20Windows%20Network%20Setup.md)
-2. [ClickCounter Installation](ClickCounter/2%20ClickCounter%20Installation.md)
-3. [ClickCounter User Guide](ClickCounter/3%20ClickCounter%20User%20Guide.md)
-4. [ESP32_click_counter Installation](ClickCounter/4%20ESP32_click_counter%20Installation.md)
-5. [ESP32_click_counter User Guide](ClickCounter/5%20ESP32_click_counter%20User%20Guide.md)
-
-## ClickTally
-
-0. [General Overview](ClickTally/0%20General%20Overview.md)
-1. [Windows Web Server Setup](ClickTally/1%20Windows%20Web%20Server%20Setup.md)
-2. [ClickTally Installation](ClickTally/2%20ClickTally%20Installation.md)
-3. [ClickTally User Guide](ClickTally/3%20ClickTally%20User%20Guide.md)
