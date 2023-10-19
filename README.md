@@ -81,6 +81,13 @@ For the quick system setup procedure:
 1. [ESP32_click_counter Installation](2.%20ESP32%20Boards/1.%20ESP32_click_counter%20Installation.md)
 2. [ESP32_click_counter User Guide](2.%20ESP32%20Boards/2.%20ESP32_click_counter%20User%20Guide.md)
 
+## 3. ClickCounter Service
+
+0. [General Overview](3.%20ClickCounter%20Service/0.%20General%20Overview.md)
+1. [Windows Network Setup](3.%20ClickCounter%20Service/1.%20Windows%20Network%20Setup.md)
+2. [ClickCounter Installation](3.%20ClickCounter%20Service/2.%20ClickCounter%20Installation.md)
+3. [ClickCounter User Guide](3.%20ClickCounter%20Service/3.%20ClickCounter%20User%20Guide.md)
+
 
 </td>
 </tr>
