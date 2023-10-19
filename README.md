@@ -88,6 +88,11 @@ For the quick system setup procedure:
 2. [ClickCounter Installation](3.%20ClickCounter%20Service/2.%20ClickCounter%20Installation.md)
 3. [ClickCounter User Guide](3.%20ClickCounter%20Service/3.%20ClickCounter%20User%20Guide.md)
 
+## 4. ClickTally Service
+
+0. [General Overview](4.%20ClickTally%20Service/0.%20General%20Overview.md)
+1. [ClickTally Installation](4.%20ClickTally%20Service/1.%20ClickTally%20Installation.md)
+2. [ClickTally User Guide](4.%20ClickTally%20Service/2.%20ClickTally%20User%20Guide.md)
 
 </td>
 </tr>
