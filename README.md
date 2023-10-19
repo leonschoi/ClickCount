@@ -61,6 +61,8 @@ For the quick system setup procedure:
 </td>
 </tr>
 
+</td>
+</tr>
 <tr style="border-style: none">
 <td colspan=2 valign="top" width="100%" style="border-style: none">
 
@@ -72,6 +74,13 @@ For the quick system setup procedure:
 1. [Windows Web Server Setup](1.%20ClickCounter%20Website/1.%20Windows%20Web%20Server%20Setup.md)
 2. [ClickCounter Website Installation](1.%20ClickCounter%20Website/2.%20ClickCounter%20Website%20Installation.md)
 3. [ClickCounter Website User Guide](1.%20ClickCounter%20Website/3.%20ClickCounter%20Website%20User%20Guide.md)
+
+## 2. ESP32 Boards
+
+0. [General Overview](2.%20ESP32%20Boards/0.%20General%20Overview.md)
+1. [ESP32_click_counter Installation](2.%20ESP32%20Boards/1.%20ESP32_click_counter%20Installation.md)
+2. [ESP32_click_counter User Guide](2.%20ESP32%20Boards/2.%20ESP32_click_counter%20User%20Guide.md)
+
 
 </td>
 </tr>
