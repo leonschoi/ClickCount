@@ -1,0 +1,188 @@
+<table style="border-style: none">
+<tr style="border-style: none">
+<td colspan=2 valign="top" style="border-style: none">
+
+# 0. General Overview
+
+</td>
+</tr>
+<tr style="border-style: none">
+<td valign="top" width="50%" style="border-style: none">
+
+The ClickCounter System consists of:
+
+- ClickCounter Website
+- ESP32 Boards
+- ClickCounter service (daemon process)
+- ClickTally service (daemon process)
+
+</td>
+<td valign="top" width="50%" style="border-style: none">
+
+ClickCounter System bao gồm:
+
+- ClickCounter Website
+- ESP32 Boards
+- ClickCounter Service (daemon process)
+- ClickTally Service (daemon process)
+
+</td>
+</tr>
+<tr style="border-style: none">
+<td colspan=2 valign="top" width="100%" style="border-style: none">
+
+1. ClickCounter Website
+
+</td>
+</tr>
+<tr style="border-style: none">
+<td valign="top" width="50%" style="border-style: none">
+
+- `http://"Hostname"` (or `http://localhost` on an installed computer) will access the ClickCounter website.
+- It displays all reports and logs as hyperlinks.
+- Clicking on the report name will open a new tab displaying the content.
+   
+</td>
+<td valign="top" width="50%" style="border-style: none">
+
+- `http://"Hostname"` (hoặc `http://localhost` trên máy tính đã cài đặt) sẽ truy cập trang web ClickCounter.
+- Nó hiển thị tất cả các báo cáo và nhật ký được lưu trữ dưới dạng siêu liên kết.
+- Click vào tên báo cáo sẽ mở ra tab mới hiển thị nội dung.
+
+</td>
+</tr>
+<tr style="border-style: none">
+<td colspan=2 valign="top" width="100%" style="border-style: none">
+
+2. ESP32 Boards
+
+</td>
+</tr>
+<tr style="border-style: none">
+<td valign="top" width="50%" style="border-style: none">
+
+- ESP32 boards with attached switch buttons are connected to the local network via Wi-Fi, and send TCP/IP messages to  ClickCounter service each time the button is clicked.
+
+</td>
+<td valign="top" width="50%" style="border-style: none">
+
+- ESP32 boards có các nút chuyển đổi kèm theo được kết nối với mạng cục bộ qua Wi-Fi và gửi tin nhắn TCP/IP tới ClickCounter service mỗi khi nhấp vào nút.
+
+</td>
+</tr>
+<tr style="border-style: none">
+<td colspan=2 valign="top" width="100%" style="border-style: none">
+
+3. ClickCounter Service
+
+</td>
+</tr>
+<tr style="border-style: none">
+<td valign="top" width="50%" style="border-style: none">
+
+- A Windows computer running the ClickCounter service receives TCP/IP messages from ESP32 boards and stores them.
+
+</td>
+<td valign="top" width="50%" style="border-style: none">
+
+- Máy tính Windows chạy ClickCounter_service nhận tin nhắn TCP/IP từ ESP32_boards và lưu trữ chúng.
+
+</td>
+</tr>
+<tr style="border-style: none">
+<td colspan=2 valign="top" width="100%" style="border-style: none">
+
+4. ClickTally Service
+
+</td>
+</tr>
+<tr style="border-style: none">
+<td valign="top" width="50%" style="border-style: none">
+
+- The same Windows computer runs ClickTally service to process data saved by the ClickCounter service and update report files.
+
+</td>
+<td valign="top" width="50%" style="border-style: none">
+
+- Cùng một máy tính Windows chạy dịch vụ ClickTally để xử lý dữ liệu được ClickCounter lưu và cập nhật file báo cáo.
+
+
+</td>
+</tr>
+<tr style="border-style: none">
+<td valign="top" width="50%" style="border-style: none">
+
+This chapter explains the ClickCounter service.
+
+</td>
+<td valign="top" width="50%" style="border-style: none">
+
+Chương này giải thích dịch vụ ClickCounter.
+
+</td>
+</tr>
+<tr style="border-style: none">
+<td valign="top" width="50%" style="border-style: none">
+
+Windows installation of the ClickCounter service is a straightforward setup of Windows for TCP/IP connection and command line execution of Windows service creation.
+
+</td>
+<td valign="top" width="50%" style="border-style: none">
+
+Việc cài đặt Windows của dịch vụ ClickCounter là một thiết lập đơn giản của Windows để kết nối TCP/IP và thực thi dòng lệnh của việc tạo dịch vụ Windows.
+
+</td>
+</tr>
+<tr style="border-style: none">
+<td valign="top" width="50%" style="border-style: none">
+
+Since the ClickCounter service is a daemon, it runs silently in the background without a user interface until it is stopped manually.
+
+</td>
+<td valign="top" width="50%" style="border-style: none">
+
+Vì dịch vụ ClickCounter là một daemon nên nó chạy âm thầm trong nền mà không có giao diện người dùng cho đến khi bị dừng theo cách thủ công.
+
+</td>
+</tr>
+<tr style="border-style: none">
+<td valign="top" width="50%" style="border-style: none">
+
+And it is configured to start automatically when the computer turns on.  There is no need to separately run the process after the computer has been rebooted.
+
+</td>
+<td valign="top" width="50%" style="border-style: none">
+
+Và nó được cấu hình để tự động khởi động khi máy tính bật. Không cần phải chạy quy trình riêng biệt sau khi máy tính được khởi động lại.
+
+</td>
+</tr>
+<tr style="border-style: none">
+<td valign="top" width="50%" style="border-style: none">
+
+
+Input:
+
+- TCP/IP messages ESP32 board
+
+Output:
+
+- `//"Server name"/YIC/ClickCounter/Data/`
+- `//"Server Name"/YIC/ClickCounter/Log/`
+
+</td>
+<td valign="top" width="50%" style="border-style: none">
+
+
+Đầu vào:
+
+- Tin nhắn TCP/IP ESP32 board
+
+Đầu ra:
+
+- `//"Server name"/YIC/ClickCounter/Data/`
+- `//"Server Name"/YIC/ClickCounter/Log/`
+
+</td>
+</tr>
+</table>
